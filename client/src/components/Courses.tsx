@@ -8,8 +8,8 @@ const Courses: React.FC = () => {
     {
       id: 'pgdcr',
       title: 'PG Diploma in Clinical Research',
-      duration: '12 Months',
-      students: '500+ Enrolled',
+      duration: '6 Months',
+      students: '300+ Enrolled',
       rating: '4.9',
       description: 'Comprehensive training in clinical trial management, GCP guidelines, and regulatory compliance.',
       features: [
@@ -20,9 +20,9 @@ const Courses: React.FC = () => {
         'Expert Mentorship'
       ],
       popular: true,
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/Clinical Research_1752662526075.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
         'Clinical Trial Management',
         'GCP Guidelines',
@@ -35,7 +35,7 @@ const Courses: React.FC = () => {
       id: 'clinical-sas',
       title: 'Advanced Diploma in Clinical SAS',
       duration: '6 Months',
-      students: '350+ Enrolled',
+      students: '300+ Enrolled',
       rating: '4.8',
       description: 'Master SAS programming for clinical data analysis, statistical reporting, and regulatory submissions.',
       features: [
@@ -45,9 +45,9 @@ const Courses: React.FC = () => {
         'Data Validation',
         'Career Guidance'
       ],
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/Clinical SAS_1752662526076.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
         'SAS Programming',
         'Statistical Analysis',
@@ -57,28 +57,28 @@ const Courses: React.FC = () => {
       ]
     },
     {
-      id: 'bioinformatics',
-      title: 'Advanced Diploma in Bioinformatics',
+      id: 'advanced-clinical-research',
+      title: 'Advanced Diploma in Clinical Research',
       duration: '6 Months',
-      students: '400+ Enrolled',
+      students: '300+ Enrolled',
       rating: '4.7',
-      description: 'Learn computational biology, genomics data analysis, and bioinformatics tools for healthcare research.',
+      description: 'Advanced training in clinical research methodologies, data management, and regulatory affairs.',
       features: [
-        'Genomics Analysis',
-        'Computational Biology',
-        'Data Mining',
-        'Molecular Modeling',
+        'Advanced Research Methods',
+        'Data Management',
+        'Regulatory Affairs',
+        'Quality Assurance',
         'Job Placement'
       ],
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/Advanced Clinical Research_1752662526072.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
-        'Genomics Analysis',
-        'Computational Biology',
-        'Data Mining',
-        'Molecular Modeling',
-        'Python Programming'
+        'Advanced Research Methods',
+        'Data Management',
+        'Regulatory Affairs',
+        'Quality Assurance',
+        'Clinical Operations'
       ]
     },
     {
@@ -95,9 +95,9 @@ const Courses: React.FC = () => {
         'Healthcare Documentation',
         'Industry Projects'
       ],
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/Medical Coding_1752662526071.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
         'ICD-10 Coding',
         'CPT Procedures',
@@ -109,7 +109,7 @@ const Courses: React.FC = () => {
     {
       id: 'ai-ml',
       title: 'PG Diploma in AI & ML Healthcare',
-      duration: '12 Months',
+      duration: '6 Months',
       students: '300+ Enrolled',
       rating: '4.8',
       description: 'Expertise in artificial intelligence and machine learning applications in healthcare and medical research.',
@@ -120,22 +120,24 @@ const Courses: React.FC = () => {
         'Medical Imaging AI',
         'Industry Projects'
       ],
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/AI & ML Healthcare_1752662526073.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
         'Machine Learning',
         'Healthcare AI',
         'Predictive Analytics',
         'Medical Imaging AI',
         'Deep Learning'
-      ]
+      ],
+      popular: true,
+      mostPopular: true
     },
     {
       id: 'mba',
       title: 'MBA in Healthcare Management',
-      duration: '24 Months',
-      students: '150+ Enrolled',
+      duration: '2 Years',
+      students: '+440 Enrolled',
       rating: '4.9',
       description: 'Comprehensive business administration program focused on healthcare industry management and leadership.',
       features: [
@@ -145,16 +147,17 @@ const Courses: React.FC = () => {
         'Leadership Skills',
         'Executive Placement'
       ],
-      image: '@assets/image_1752654242371.png',
+      image: '@assets/MBA in Healthcare_1752662526070.png',
       jobGuarantee: true,
-      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      batchInfo: 'Check For Admission Eligibility',
       whatYouLearn: [
         'Healthcare Strategy',
         'Operations Management',
         'Financial Planning',
         'Leadership Skills',
         'Strategic Planning'
-      ]
+      ],
+      industryEndorsed: true
     }
   ];
 
@@ -232,37 +235,36 @@ const Courses: React.FC = () => {
                   course.popular ? 'ring-2 ring-blue-500/50' : ''
                 }`}
               >
-                {/* Job Guarantee Badge */}
-                {course.jobGuarantee && (
-                  <div className="absolute top-0 left-0 z-10">
-                    <div className="bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-2 text-sm font-bold transform -rotate-12 origin-top-left translate-x-2 translate-y-2 shadow-lg">
-                      100% JOB GUARANTEE
+                {/* Special Badges */}
+                {course.mostPopular && (
+                  <div className="absolute top-0 right-0 z-10">
+                    <div className="bg-gradient-to-r from-pink-500 to-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg">
+                      MOST POPULAR
                     </div>
                   </div>
                 )}
                 
-                {/* Hero Image Section */}
-                <div className="relative h-64 bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-100/50 to-indigo-100/50"></div>
+                {course.industryEndorsed && (
+                  <div className="absolute top-12 right-8 z-10">
+                    <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 text-xs font-bold rounded-full shadow-lg">
+                      Industry-Endorsed
+                    </div>
+                  </div>
+                )}
+                
+                {/* Course Banner Image */}
+                <div className="relative h-80 overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop"
-                    alt="Healthcare Professional" 
+                    src={course.image} 
+                    alt={course.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2 font-poppins">
-                      {course.title}
-                    </h3>
-                  </div>
                 </div>
                 
-                {/* Course Content Section */}
+                {/* Course Content Section - This is now part of the banner image */}
                 <div className="p-6">
-                  {/* What Will You Learn Section */}
+                  {/* Additional Course Information */}
                   <div className="mb-6">
-                    <h4 className="text-xl font-bold text-orange-600 mb-4 font-poppins">
-                      What Will You Learn?
-                    </h4>
                     <div className="space-y-3">
                       <div className="flex items-center text-gray-700">
                         <Calendar className="text-orange-500 mr-3" size={20} />
@@ -294,7 +296,7 @@ const Courses: React.FC = () => {
                   {/* CTA Buttons */}
                   <div className="space-y-3">
                     <button className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-6 rounded-xl font-semibold font-poppins hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105">
-                      View Course →
+                      {course.id === 'mba' ? 'Check For Admission Eligibility >' : 'View Course →'}
                     </button>
                     <button className="w-full text-orange-600 py-2 px-6 rounded-xl font-semibold font-poppins hover:text-orange-700 transition-all duration-300 transform hover:scale-105 border border-orange-200 hover:border-orange-300">
                       View Course →
