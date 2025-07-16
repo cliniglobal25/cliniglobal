@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { BookOpen, Clock, Users, Award, ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Heart, Star, Sparkles, Calendar, CheckCircle } from 'lucide-react';
 
-// Import banner images
-import mbaHealthcareBanner from '@assets/MBA in Healthcare_1752662526070.png';
-import medicalCodingBanner from '@assets/Medical Coding_1752662526071.png';
-import advancedClinicalResearchBanner from '@assets/Advanced Clinical Research_1752662526072.png';
-import aiMlHealthcareBanner from '@assets/AI & ML Healthcare_1752662526073.png';
-import clinicalResearchBanner from '@assets/Clinical Research_1752662526075.png';
-import clinicalSASBanner from '@assets/Clinical SAS_1752662526076.png';
+// Course banner images - using clean healthcare professional images
+const courseImages = {
+  mbaHealthcare: 'https://images.pexels.com/photos/3279197/pexels-photo-3279197.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  medicalCoding: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  advancedClinicalResearch: 'https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  aiMlHealthcare: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  clinicalResearch: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  clinicalSAS: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+};
 
 const Courses: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +30,7 @@ const Courses: React.FC = () => {
         'Expert Mentorship'
       ],
       popular: true,
-      image: clinicalResearchBanner,
+      image: courseImages.clinicalResearch,
       jobGuarantee: true,
       batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
@@ -53,7 +55,7 @@ const Courses: React.FC = () => {
         'Data Validation',
         'Career Guidance'
       ],
-      image: clinicalSASBanner,
+      image: courseImages.clinicalSAS,
       jobGuarantee: true,
       batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
@@ -78,7 +80,7 @@ const Courses: React.FC = () => {
         'Quality Assurance',
         'Job Placement'
       ],
-      image: advancedClinicalResearchBanner,
+      image: courseImages.advancedClinicalResearch,
       jobGuarantee: true,
       batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
@@ -103,7 +105,7 @@ const Courses: React.FC = () => {
         'Healthcare Documentation',
         'Industry Projects'
       ],
-      image: medicalCodingBanner,
+      image: courseImages.medicalCoding,
       jobGuarantee: true,
       batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
@@ -128,7 +130,7 @@ const Courses: React.FC = () => {
         'Medical Imaging AI',
         'Industry Projects'
       ],
-      image: aiMlHealthcareBanner,
+      image: courseImages.aiMlHealthcare,
       jobGuarantee: true,
       batchInfo: 'Batch Starts Every 1st & 3rd Week of Month',
       whatYouLearn: [
@@ -155,7 +157,7 @@ const Courses: React.FC = () => {
         'Leadership Skills',
         'Executive Placement'
       ],
-      image: mbaHealthcareBanner,
+      image: courseImages.mbaHealthcare,
       jobGuarantee: true,
       batchInfo: 'Check For Admission Eligibility',
       whatYouLearn: [
