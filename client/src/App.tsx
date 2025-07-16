@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import StudentsTransformation from './components/StudentsTransformation';
+import IndustryTrainingPrograms from './components/IndustryTrainingPrograms';
 import Admission from './components/Admission';
 
 import Placements from './components/Placements';
@@ -31,6 +32,7 @@ const HomePage: React.FC = () => {
         <Hero />
         <About />
         <StudentsTransformation />
+        <IndustryTrainingPrograms />
         <Admission />
         <Contact />
       </main>
