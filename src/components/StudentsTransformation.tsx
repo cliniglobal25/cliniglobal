@@ -1,6 +1,6 @@
 import React from 'react';
 import { CircularTestimonials } from './ui/circular-testimonials';
-import { Users, TrendingUp, Award, Building, Heart, Star, Sparkles, GraduationCap } from 'lucide-react';
+import { Heart, Star, Sparkles, GraduationCap } from 'lucide-react';
 
 const StudentsTransformation: React.FC = () => {
   const testimonials = [
@@ -36,31 +36,17 @@ const StudentsTransformation: React.FC = () => {
     },
   ];
 
-  const transformationStats = [
-    {
-      icon: Users,
-      number: '5000+',
-      label: 'Students Transformed',
-      color: 'blue'
-    },
-    {
-      icon: TrendingUp,
-      number: '300%',
-      label: 'Average Salary Hike',
-      color: 'green'
-    },
-    {
-      icon: Award,
-      number: '95%',
-      label: 'Placement Success',
-      color: 'indigo'
-    },
-    {
-      icon: Building,
-      number: '50+',
-      label: 'Partner Companies',
-      color: 'purple'
-    }
+  const healthcareCompanies = [
+    { name: 'Apollo Hospitals', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Apollo-Hospitals-Logo.png' },
+    { name: 'Fortis Healthcare', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Fortis-Healthcare-Logo.png' },
+    { name: 'Max Healthcare', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Max-Healthcare-Logo.png' },
+    { name: 'Manipal Hospitals', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Manipal-Hospitals-Logo.png' },
+    { name: 'Narayana Health', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Narayana-Health-Logo.png' },
+    { name: 'Dr. Reddys Labs', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Dr-Reddys-Logo.png' },
+    { name: 'Sun Pharma', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Sun-Pharma-Logo.png' },
+    { name: 'Cipla', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Cipla-Logo.png' },
+    { name: 'Biocon', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Biocon-Logo.png' },
+    { name: 'Lupin', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Lupin-Logo.png' }
   ];
 
   return (
@@ -90,17 +76,39 @@ const StudentsTransformation: React.FC = () => {
           </p>
         </div>
 
-        {/* Transformation Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {transformationStats.map((stat, index) => (
-            <div key={index} className="text-center p-6 bg-white/60 backdrop-blur-lg border border-white/20 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/80 transition-all duration-300">
-              <div className={`w-16 h-16 bg-gradient-to-br from-${stat.color}-400/30 to-${stat.color}-600/30 backdrop-blur-md border border-white/30 rounded-2xl flex items-center justify-center mx-auto mb-4 hover:scale-110 hover:rotate-3 transition-all duration-300`}>
-                <stat.icon className={`text-${stat.color}-600`} size={28} />
+        {/* Healthcare Companies Scrolling Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 font-poppins">
+            Our Students Are Placed At
+          </h3>
+          <div className="bg-white/40 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-lg overflow-hidden relative">
+            <div className="relative">
+              <div className="flex animate-slide-infinite space-x-12">
+                {[...healthcareCompanies, ...healthcareCompanies].map((company, index) => (
+                  <div key={index} className="flex-shrink-0 w-48 h-24 flex items-center justify-center p-4 bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl hover:bg-white/80 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <img 
+                      src={company.logo} 
+                      alt={company.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      onError={(e) => {
+                        // Fallback to text if logo fails to load
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `<span class="text-gray-700 font-medium text-sm text-center font-poppins">${company.name}</span>`;
+                        }
+                      }}
+                    />
+                  </div>
+                ))}
               </div>
-              <div className={`text-2xl md:text-3xl font-bold text-${stat.color}-600 mb-2 font-poppins`}>{stat.number}</div>
-              <div className="text-gray-600 font-poppins text-sm">{stat.label}</div>
             </div>
-          ))}
+            
+            {/* Gradient overlays for smooth infinite scroll effect */}
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white/40 to-transparent pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white/40 to-transparent pointer-events-none"></div>
+          </div>
         </div>
 
         {/* Circular Testimonials */}
