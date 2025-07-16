@@ -38,44 +38,36 @@ const StudentsTransformation: React.FC = () => {
 
   const healthcareCompanies = [
     { 
-      name: 'Apollo Hospitals', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Apollo_Hospitals_logo.svg/320px-Apollo_Hospitals_logo.svg.png'
-    },
-    { 
-      name: 'Fortis Healthcare', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Fortis_Healthcare_Logo.svg/320px-Fortis_Healthcare_Logo.svg.png'
-    },
-    { 
       name: 'Max Healthcare', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Max_Healthcare_logo.svg/320px-Max_Healthcare_logo.svg.png'
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPk1BWDwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzFlMzM2MiI+SEVBTFRIQ0FSRTwvdGV4dD48L3N2Zz4='
     },
     { 
       name: 'Manipal Hospitals', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Manipal_Hospitals_logo.svg/320px-Manipal_Hospitals_logo.svg.png'
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPm1hbmlwYWxob3NwaXRhbHM8L3RleHQ+PHRleHQgeD0iNTAiIHk9IjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiMzMGFkZGIiPkxJRkUnUyBPTjwvdGV4dD48L3N2Zz4='
     },
     { 
       name: 'Narayana Health', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Narayana_Health_logo.svg/320px-Narayana_Health_logo.svg.png'
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPk5hcmF5YW5hIEhlYWx0aDwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzFlMzM2MiI+SGVhbHRoIGZvciBhbGwuIEFsbCBmb3IgaGVhbHRoLjwvdGV4dD48L3N2Zz4='
     },
     { 
-      name: 'Dr. Reddys Labs', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dr._Reddy%27s_Laboratories_logo.svg/320px-Dr._Reddy%27s_Laboratories_logo.svg.png'
-    },
-    { 
-      name: 'Sun Pharma', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sun_Pharmaceutical_logo.svg/320px-Sun_Pharmaceutical_logo.svg.png'
-    },
-    { 
-      name: 'Cipla', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cipla_logo.svg/320px-Cipla_logo.svg.png'
+      name: 'Dr. Reddy\'s Labs', 
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM3NzRkOWIiPkRyLlJlZGR5J3M8L3RleHQ+PC9zdmc+'
     },
     { 
       name: 'Biocon', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Biocon_logo.svg/320px-Biocon_logo.svg.png'
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzYzU3OTMiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPkJpb2NvbjwvdGV4dD48L3N2Zz4='
     },
     { 
-      name: 'Lupin', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Lupin_Limited_logo.svg/320px-Lupin_Limited_logo.svg.png'
+      name: 'Cipla', 
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPkNpcGxhPC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjMWUzMzYyIj5DYXJpbmcgZm9yIExpZmU8L3RleHQ+PC9zdmc+'
+    },
+    { 
+      name: 'Sun Pharma', 
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZjZkMDAiPlN1biBQaGFybWE8L3RleHQ+PC9zdmc+'
+    },
+    { 
+      name: 'Apollo Hospitals', 
+      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDY1ZTMiPkFwb2xsbyBIb3NwaXRhbHM8L3RleHQ+PC9zdmc+'
     }
   ];
 
