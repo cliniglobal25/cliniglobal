@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import StudentsTransformation from './components/StudentsTransformation';
 import Admission from './components/Admission';
 import Courses from './components/Courses';
 import Placements from './components/Placements';
@@ -29,6 +30,7 @@ const HomePage: React.FC = () => {
       <main>
         <Hero />
         <About />
+        <StudentsTransformation />
         <Admission />
         <Courses />
         <Contact />
