@@ -37,16 +37,46 @@ const StudentsTransformation: React.FC = () => {
   ];
 
   const healthcareCompanies = [
-    { name: 'Apollo Hospitals', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Apollo-Hospitals-Logo.png' },
-    { name: 'Fortis Healthcare', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Fortis-Healthcare-Logo.png' },
-    { name: 'Max Healthcare', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Max-Healthcare-Logo.png' },
-    { name: 'Manipal Hospitals', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Manipal-Hospitals-Logo.png' },
-    { name: 'Narayana Health', logo: 'https://logos-world.net/wp-content/uploads/2021/11/Narayana-Health-Logo.png' },
-    { name: 'Dr. Reddys Labs', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Dr-Reddys-Logo.png' },
-    { name: 'Sun Pharma', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Sun-Pharma-Logo.png' },
-    { name: 'Cipla', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Cipla-Logo.png' },
-    { name: 'Biocon', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Biocon-Logo.png' },
-    { name: 'Lupin', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Lupin-Logo.png' }
+    { 
+      name: 'Apollo Hospitals', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Apollo_Hospitals_logo.svg/320px-Apollo_Hospitals_logo.svg.png'
+    },
+    { 
+      name: 'Fortis Healthcare', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Fortis_Healthcare_Logo.svg/320px-Fortis_Healthcare_Logo.svg.png'
+    },
+    { 
+      name: 'Max Healthcare', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Max_Healthcare_logo.svg/320px-Max_Healthcare_logo.svg.png'
+    },
+    { 
+      name: 'Manipal Hospitals', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Manipal_Hospitals_logo.svg/320px-Manipal_Hospitals_logo.svg.png'
+    },
+    { 
+      name: 'Narayana Health', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Narayana_Health_logo.svg/320px-Narayana_Health_logo.svg.png'
+    },
+    { 
+      name: 'Dr. Reddys Labs', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dr._Reddy%27s_Laboratories_logo.svg/320px-Dr._Reddy%27s_Laboratories_logo.svg.png'
+    },
+    { 
+      name: 'Sun Pharma', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sun_Pharmaceutical_logo.svg/320px-Sun_Pharmaceutical_logo.svg.png'
+    },
+    { 
+      name: 'Cipla', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cipla_logo.svg/320px-Cipla_logo.svg.png'
+    },
+    { 
+      name: 'Biocon', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Biocon_logo.svg/320px-Biocon_logo.svg.png'
+    },
+    { 
+      name: 'Lupin', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Lupin_Limited_logo.svg/320px-Lupin_Limited_logo.svg.png'
+    }
   ];
 
   return (
@@ -139,30 +169,15 @@ const StudentsTransformation: React.FC = () => {
           </div>
         </div>
 
-        {/* Success Highlights */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-3xl p-8 md:p-12 shadow-2xl">
-          <div className="text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 font-poppins">
+        {/* Call to Action */}
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-3xl p-12 shadow-2xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 font-poppins">
               Join the Success Stories
-            </h3>
+            </h2>
             <p className="text-lg md:text-xl text-white/90 mb-8 font-poppins">
               Transform your career with CliniGlobal's industry-leading healthcare training programs
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold mb-2 font-poppins">100%</div>
-                <div className="text-white/80 font-poppins">Placement Assistance</div>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold mb-2 font-poppins">6-12</div>
-                <div className="text-white/80 font-poppins">Months Training</div>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold mb-2 font-poppins">₹18L</div>
-                <div className="text-white/80 font-poppins">Highest Package</div>
-              </div>
-            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors text-lg font-poppins">
