@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { BookOpen, Clock, Users, Award, ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Heart, Star, Sparkles } from 'lucide-react';
+import { BookOpen, Clock, Users, Award, ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Heart, Star, Sparkles, Calendar, CheckCircle } from 'lucide-react';
 
 const Courses: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const courses = [
     {
+      id: 'pgdcr',
       title: 'PG Diploma in Clinical Research',
       duration: '12 Months',
       students: '500+ Enrolled',
@@ -18,9 +19,20 @@ const Courses: React.FC = () => {
         '100% Placement Support',
         'Expert Mentorship'
       ],
-      popular: true
+      popular: true,
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'Clinical Trial Management',
+        'GCP Guidelines',
+        'Regulatory Compliance',
+        'Data Management',
+        'Statistical Analysis'
+      ]
     },
     {
+      id: 'clinical-sas',
       title: 'Advanced Diploma in Clinical SAS',
       duration: '6 Months',
       students: '350+ Enrolled',
@@ -32,9 +44,20 @@ const Courses: React.FC = () => {
         'Clinical Reporting',
         'Data Validation',
         'Career Guidance'
+      ],
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'SAS Programming',
+        'Statistical Analysis',
+        'Clinical Reporting',
+        'Data Validation',
+        'CDISC Standards'
       ]
     },
     {
+      id: 'bioinformatics',
       title: 'Advanced Diploma in Bioinformatics',
       duration: '6 Months',
       students: '400+ Enrolled',
@@ -46,9 +69,20 @@ const Courses: React.FC = () => {
         'Data Mining',
         'Molecular Modeling',
         'Job Placement'
+      ],
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'Genomics Analysis',
+        'Computational Biology',
+        'Data Mining',
+        'Molecular Modeling',
+        'Python Programming'
       ]
     },
     {
+      id: 'medical-coding',
       title: 'Advanced Diploma in Medical Coding',
       duration: '6 Months',
       students: '450+ Enrolled',
@@ -60,9 +94,20 @@ const Courses: React.FC = () => {
         'Medical Terminology',
         'Healthcare Documentation',
         'Industry Projects'
+      ],
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'ICD-10 Coding',
+        'CPT Procedures',
+        'Medical Terminology',
+        'Healthcare Documentation',
+        'Billing Processes'
       ]
     },
     {
+      id: 'ai-ml',
       title: 'PG Diploma in AI & ML Healthcare',
       duration: '12 Months',
       students: '300+ Enrolled',
@@ -74,9 +119,20 @@ const Courses: React.FC = () => {
         'Predictive Analytics',
         'Medical Imaging AI',
         'Industry Projects'
+      ],
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'Machine Learning',
+        'Healthcare AI',
+        'Predictive Analytics',
+        'Medical Imaging AI',
+        'Deep Learning'
       ]
     },
     {
+      id: 'mba',
       title: 'MBA in Healthcare Management',
       duration: '24 Months',
       students: '150+ Enrolled',
@@ -88,6 +144,16 @@ const Courses: React.FC = () => {
         'Financial Planning',
         'Leadership Skills',
         'Executive Placement'
+      ],
+      image: '@assets/image_1752654242371.png',
+      jobGuarantee: true,
+      batchInfo: 'Batch Starts every 1st & 3rd Week of Month',
+      whatYouLearn: [
+        'Healthcare Strategy',
+        'Operations Management',
+        'Financial Planning',
+        'Leadership Skills',
+        'Strategic Planning'
       ]
     }
   ];
@@ -162,62 +228,79 @@ const Courses: React.FC = () => {
             {getCurrentCourses().map((course, index) => (
               <div
                 key={currentIndex + index}
-                className={`group relative bg-white/40 backdrop-blur-lg border border-white/20 rounded-3xl overflow-hidden hover:bg-white/60 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-105 ${
+                className={`group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-105 ${
                   course.popular ? 'ring-2 ring-blue-500/50' : ''
                 }`}
               >
-                {course.popular && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Most Popular
+                {/* Job Guarantee Badge */}
+                {course.jobGuarantee && (
+                  <div className="absolute top-0 left-0 z-10">
+                    <div className="bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-2 text-sm font-bold transform -rotate-12 origin-top-left translate-x-2 translate-y-2 shadow-lg">
+                      100% JOB GUARANTEE
+                    </div>
                   </div>
                 )}
                 
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400/30 to-indigo-400/30 backdrop-blur-md border border-white/30 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                      <BookOpen className="text-blue-600 group-hover:text-indigo-600 transition-colors duration-300" size={24} />
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Star className="text-yellow-400 fill-current" size={16} />
-                      <span className="text-sm font-medium text-gray-700">{course.rating}</span>
-                    </div>
+                {/* Hero Image Section */}
+                <div className="relative h-64 bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-100/50 to-indigo-100/50"></div>
+                  <img 
+                    src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop"
+                    alt="Healthcare Professional" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+                    <h3 className="text-2xl font-bold text-white mb-2 font-poppins">
+                      {course.title}
+                    </h3>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                    {course.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {course.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between mb-6 text-sm text-gray-600">
-                    <div className="flex items-center space-x-1">
-                      <Clock size={16} />
-                      <span>{course.duration}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users size={16} />
-                      <span>{course.students}</span>
-                    </div>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {course.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-700">
-                        <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <button className="w-full bg-gradient-to-r from-blue-600/90 to-indigo-600/90 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-2xl hover:from-blue-700/90 hover:to-indigo-700/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center space-x-2 group">
-                    <span>Enroll Now</span>
-                    <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
-                  </button>
                 </div>
                 
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-indigo-600/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                {/* Course Content Section */}
+                <div className="p-6">
+                  {/* What Will You Learn Section */}
+                  <div className="mb-6">
+                    <h4 className="text-xl font-bold text-orange-600 mb-4 font-poppins">
+                      What Will You Learn?
+                    </h4>
+                    <div className="space-y-3">
+                      <div className="flex items-center text-gray-700">
+                        <Calendar className="text-orange-500 mr-3" size={20} />
+                        <span className="font-poppins font-medium">{course.duration}</span>
+                      </div>
+                      <div className="flex items-center text-gray-700">
+                        <Users className="text-orange-500 mr-3" size={20} />
+                        <span className="font-poppins font-medium">{course.students}</span>
+                      </div>
+                      <div className="flex items-center text-gray-700">
+                        <Calendar className="text-orange-500 mr-3" size={20} />
+                        <span className="font-poppins font-medium">{course.batchInfo}</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Course Features */}
+                  <div className="mb-6">
+                    <ul className="space-y-2">
+                      {course.whatYouLearn.slice(0, 3).map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-start text-sm text-gray-700">
+                          <CheckCircle className="text-green-500 mr-2 mt-0.5 flex-shrink-0" size={16} />
+                          <span className="font-poppins">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* CTA Buttons */}
+                  <div className="space-y-3">
+                    <button className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-6 rounded-xl font-semibold font-poppins hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105">
+                      View Course →
+                    </button>
+                    <button className="w-full text-orange-600 py-2 px-6 rounded-xl font-semibold font-poppins hover:text-orange-700 transition-all duration-300 transform hover:scale-105 border border-orange-200 hover:border-orange-300">
+                      View Course →
+                    </button>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

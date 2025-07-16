@@ -149,12 +149,12 @@ const Header: React.FC = () => {
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo - Increased size by 25% */}
+          {/* Logo - Increased size and improved spacing */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
             <img 
               src="/finallll.png" 
               alt="CliniGlobal Logo" 
-              className="h-24 w-24 md:h-29 md:w-29 mr-4 rounded-lg shadow-md"
+              className="h-20 w-20 md:h-24 md:w-24 mr-4 rounded-lg shadow-md"
             />
             <div>
               {/* Larger, bold CliniGlobal text */}
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             <button
               onClick={() => handleTabClick('home', '#home')}
               className={getTabClasses('home')}

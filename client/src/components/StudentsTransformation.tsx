@@ -8,31 +8,31 @@ const StudentsTransformation: React.FC = () => {
       quote: "CliniGlobal completely transformed my career. After 6 months of intensive training in Clinical Research, I secured a position as Clinical Data Analyst at Apollo Hospitals. The faculty support and practical training were exceptional!",
       name: "Priya Nair",
       designation: "Clinical Data Analyst @ Apollo Hospitals",
-      src: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
     },
     {
       quote: "Thanks to CliniGlobal's comprehensive Clinical Research program, I mastered GCP guidelines and regulatory processes. Now I work as a Clinical Research Associate at Cipla with 200% salary hike. Best decision of my life!",
       name: "Rohit Verma",
       designation: "Clinical Research Associate @ Cipla",
-      src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
     },
     {
       quote: "The mentors at CliniGlobal guided me step by step through Pharmacovigilance training. Today, I am proud to be part of Biocon's Drug Safety team. The placement support was incredible - got placed within 2 weeks!",
       name: "Sneha Kulkarni",
       designation: "Drug Safety Associate @ Biocon",
-      src: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
     },
     {
       quote: "The hands-on projects and real clinical trial experience were amazing! CliniGlobal's Clinical Data Management course helped me crack my interview at Fortis Healthcare as a Data Manager within weeks of completion.",
       name: "Aditya Sharma",
       designation: "Clinical Data Manager @ Fortis Healthcare",
-      src: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
     },
     {
       quote: "CliniGlobal's mock interviews, resume building, and practical Medical Coding training helped me land my first job in Clinical Research at Sun Pharma. From fresher to professional in just 4 months!",
       name: "Aarti Mishra",
       designation: "Clinical Research Coordinator @ Sun Pharma",
-      src: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
     },
   ];
 
@@ -115,26 +115,16 @@ const StudentsTransformation: React.FC = () => {
             <div className="relative">
               <div className="flex animate-slide-infinite space-x-12">
                 {[...healthcareCompanies, ...healthcareCompanies].map((company, index) => (
-                  <div key={index} className="flex-shrink-0 w-48 h-24 flex flex-col items-center justify-center p-4 bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl hover:bg-white/80 hover:scale-105 transition-all duration-300 shadow-lg">
+                  <div key={index} className="flex-shrink-0 w-48 h-24 flex items-center justify-center p-4 bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl hover:bg-white/80 hover:scale-105 transition-all duration-300 shadow-lg">
                     <img 
                       src={company.logo} 
                       alt={company.name}
-                      className="max-w-full h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 mb-2"
+                      className="max-w-full h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                       onError={(e) => {
                         const target = e.currentTarget as HTMLImageElement;
                         target.style.display = 'none';
-                        const nextSibling = target.nextElementSibling as HTMLElement;
-                        if (nextSibling) {
-                          nextSibling.style.display = 'block';
-                        }
                       }}
                     />
-                    <span 
-                      className="text-gray-700 font-medium text-xs text-center font-poppins hidden"
-                      style={{ display: 'none' }}
-                    >
-                      {company.name}
-                    </span>
                   </div>
                 ))}
               </div>
