@@ -330,15 +330,15 @@ const CRMCourse: React.FC = () => {
       )}
 
       {/* Header with Clinical Research Banner */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 relative overflow-hidden">
         {/* Background Clinical Research Image */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <img 
             src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
             alt="Clinical Research Laboratory" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center brightness-125 contrast-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 via-blue-600/60 to-indigo-600/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 via-blue-600/50 to-indigo-600/70"></div>
         </div>
 
         {/* Floating Clinical Research Icons */}

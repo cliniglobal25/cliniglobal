@@ -210,15 +210,15 @@ const MedicalCodingCourse: React.FC = () => {
       )}
 
       {/* Header with Medical Coding Banner */}
-      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-12 relative overflow-hidden">
         {/* Background Medical Coding Image */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <img 
             src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
             alt="Medical Coding and Healthcare Documentation" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center brightness-125 contrast-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 via-green-600/60 to-blue-600/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/70 via-green-600/50 to-blue-600/70"></div>
         </div>
 
         {/* Floating Medical Coding Icons */}

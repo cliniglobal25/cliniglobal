@@ -261,12 +261,13 @@ const Courses: React.FC = () => {
                 )}
                 
                 {/* Course Banner Image */}
-                <div className="relative h-80 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={course.image} 
                     alt={course.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center brightness-110 contrast-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                 </div>
                 
                 {/* Course Content Section - This is now part of the banner image */}
@@ -304,10 +305,10 @@ const Courses: React.FC = () => {
                   {/* CTA Buttons */}
                   <div className="space-y-3">
                     <button className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-6 rounded-xl font-semibold font-poppins hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105">
-                      {course.id === 'mba' ? 'Check For Admission Eligibility >' : 'View Course →'}
+                      {course.id === 'mba' ? 'Check Admission Eligibility' : 'Enroll Now'}
                     </button>
                     <button className="w-full text-orange-600 py-2 px-6 rounded-xl font-semibold font-poppins hover:text-orange-700 transition-all duration-300 transform hover:scale-105 border border-orange-200 hover:border-orange-300">
-                      View Course →
+                      Get Free Counseling
                     </button>
                   </div>
                 </div>

@@ -143,14 +143,14 @@ const CoursesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-slate-50 to-blue-50">
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
           <img 
             src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
             alt="Healthcare Education" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center brightness-125 contrast-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 via-blue-600/60 to-indigo-600/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 via-blue-600/50 to-indigo-600/70"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

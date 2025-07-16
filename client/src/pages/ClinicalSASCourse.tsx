@@ -259,12 +259,12 @@ const ClinicalSASCourse: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-12 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <img 
             src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
             alt="Clinical SAS Programming" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-125 contrast-110"
           />
         </div>
 
