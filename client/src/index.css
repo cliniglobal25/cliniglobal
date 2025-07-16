@@ -38,6 +38,20 @@
   transform: scale(1.02);
 }
 
+/* Smooth scrolling animation for healthcare companies */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
 /* Custom animations for healthcare professionals floating */
 @keyframes float-slow {
   0%, 100% {

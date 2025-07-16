@@ -39,35 +39,23 @@ const StudentsTransformation: React.FC = () => {
   const healthcareCompanies = [
     { 
       name: 'Max Healthcare', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPk1BWDwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzFlMzM2MiI+SEVBTFRIQ0FSRTwvdGV4dD48L3N2Zz4='
+      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
     },
     { 
       name: 'Manipal Hospitals', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPm1hbmlwYWxob3NwaXRhbHM8L3RleHQ+PHRleHQgeD0iNTAiIHk9IjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiMzMGFkZGIiPkxJRkUnUyBPTjwvdGV4dD48L3N2Zz4='
+      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
     },
     { 
       name: 'Narayana Health', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPk5hcmF5YW5hIEhlYWx0aDwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzFlMzM2MiI+SGVhbHRoIGZvciBhbGwuIEFsbCBmb3IgaGVhbHRoLjwvdGV4dD48L3N2Zz4='
+      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
     },
     { 
       name: 'Dr. Reddy\'s Labs', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM3NzRkOWIiPkRyLlJlZGR5J3M8L3RleHQ+PC9zdmc+'
+      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
     },
     { 
       name: 'Biocon', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzYzU3OTMiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPkJpb2NvbjwvdGV4dD48L3N2Zz4='
-    },
-    { 
-      name: 'Cipla', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxZTMzNjIiPkNpcGxhPC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjMWUzMzYyIj5DYXJpbmcgZm9yIExpZmU8L3RleHQ+PC9zdmc+'
-    },
-    { 
-      name: 'Sun Pharma', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZjZkMDAiPlN1biBQaGFybWE8L3RleHQ+PC9zdmc+'
-    },
-    { 
-      name: 'Apollo Hospitals', 
-      logo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmZmZmYiLz48dGV4dCB4PSI1MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDY1ZTMiPkFwb2xsbyBIb3NwaXRhbHM8L3RleHQ+PC9zdmc+'
+      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
     }
   ];
 
@@ -100,31 +88,83 @@ const StudentsTransformation: React.FC = () => {
 
         {/* Healthcare Companies Scrolling Section */}
         <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 font-poppins">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12 font-poppins">
             Our Students Are Placed At
           </h3>
-          <div className="bg-white/40 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-lg overflow-hidden relative">
-            <div className="relative">
-              <div className="flex animate-slide-infinite space-x-12">
-                {[...healthcareCompanies, ...healthcareCompanies].map((company, index) => (
-                  <div key={index} className="flex-shrink-0 w-48 h-24 flex items-center justify-center p-4 bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl hover:bg-white/80 hover:scale-105 transition-all duration-300 shadow-lg">
-                    <img 
-                      src={company.logo} 
-                      alt={company.name}
-                      className="max-w-full h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      onError={(e) => {
-                        const target = e.currentTarget as HTMLImageElement;
-                        target.style.display = 'none';
-                      }}
-                    />
-                  </div>
-                ))}
+          
+          {/* Clean scrolling logo section */}
+          <div className="relative overflow-hidden bg-white py-8 shadow-sm">
+            <div className="flex animate-scroll-left space-x-16">
+              {/* First set of logos */}
+              <div className="flex items-center justify-center min-w-[200px] h-20">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">MAX</div>
+                  <div className="text-sm text-blue-800">HEALTHCARE</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[250px] h-20">
+                <div className="text-center">
+                  <div className="text-lg font-bold text-blue-600 mb-1">manipal</div>
+                  <div className="text-lg font-bold text-teal-400">hospitals</div>
+                  <div className="text-xs text-blue-800">LIFE'S ON</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[250px] h-20">
+                <div className="text-center">
+                  <div className="text-lg font-bold text-blue-800 mb-1">NH Narayana Health</div>
+                  <div className="text-xs text-blue-600">Health for all. All for health.</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[200px] h-20">
+                <div className="text-center">
+                  <div className="text-xl font-bold text-purple-600">Dr.Reddy's</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[150px] h-20 bg-blue-800 px-6 rounded">
+                <div className="text-center">
+                  <div className="text-xl font-bold text-white">Biocon</div>
+                </div>
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex items-center justify-center min-w-[200px] h-20">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">MAX</div>
+                  <div className="text-sm text-blue-800">HEALTHCARE</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[250px] h-20">
+                <div className="text-center">
+                  <div className="text-lg font-bold text-blue-600 mb-1">manipal</div>
+                  <div className="text-lg font-bold text-teal-400">hospitals</div>
+                  <div className="text-xs text-blue-800">LIFE'S ON</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[250px] h-20">
+                <div className="text-center">
+                  <div className="text-lg font-bold text-blue-800 mb-1">NH Narayana Health</div>
+                  <div className="text-xs text-blue-600">Health for all. All for health.</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[200px] h-20">
+                <div className="text-center">
+                  <div className="text-xl font-bold text-purple-600">Dr.Reddy's</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center min-w-[150px] h-20 bg-blue-800 px-6 rounded">
+                <div className="text-center">
+                  <div className="text-xl font-bold text-white">Biocon</div>
+                </div>
               </div>
             </div>
-            
-            {/* Gradient overlays for smooth infinite scroll effect */}
-            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white/40 to-transparent pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white/40 to-transparent pointer-events-none"></div>
           </div>
         </div>
 
