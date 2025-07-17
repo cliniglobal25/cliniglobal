@@ -150,20 +150,20 @@ const Header: React.FC = () => {
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo - Further enlarged and properly aligned */}
+          {/* Logo - Properly sized and aligned */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
             <img 
               src="/finallll.png" 
               alt="CliniGlobal Logo" 
-              className="h-20 w-20 md:h-24 md:w-24 mr-4 rounded-lg shadow-md object-contain"
+              className="h-12 w-12 md:h-14 md:w-14 mr-3 rounded-lg shadow-md object-contain"
             />
             <div className="flex flex-col justify-center">
-              {/* Larger, bold CliniGlobal text */}
-              <h1 className="text-3xl md:text-5xl font-bold cliniglobal-brand font-poppins leading-tight">
+              {/* CliniGlobal text - sized to match navigation */}
+              <h1 className="text-xl md:text-2xl font-bold cliniglobal-brand font-poppins leading-tight">
                 <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
               </h1>
               {/* Smaller, muted gray subtext */}
-              <p className="text-sm text-gray-500 font-poppins font-medium">Research Institute</p>
+              <p className="text-xs text-gray-500 font-poppins font-medium">Research Institute</p>
             </div>
           </div>
 
