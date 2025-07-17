@@ -158,12 +158,12 @@ const Header: React.FC = () => {
               className="h-12 w-12 md:h-14 md:w-14 mr-3 rounded-lg shadow-md object-contain"
             />
             <div className="flex flex-col justify-center">
-              {/* CliniGlobal text - sized to match navigation */}
-              <h1 className="text-xl md:text-2xl font-bold cliniglobal-brand font-poppins leading-tight">
+              {/* CliniGlobal text - increased size for better visibility */}
+              <h1 className="text-2xl md:text-3xl font-bold cliniglobal-brand font-poppins leading-tight">
                 <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
               </h1>
-              {/* Smaller, muted gray subtext */}
-              <p className="text-xs text-gray-500 font-poppins font-medium">Research Institute</p>
+              {/* Subtext with better visibility */}
+              <p className="text-sm text-gray-500 font-poppins font-medium">Research Institute</p>
             </div>
           </div>
 
