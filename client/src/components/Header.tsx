@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, ChevronDown, GraduationCap, UserPlus } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import AnimatedSlogan from './AnimatedSlogan';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -131,16 +132,16 @@ const Header: React.FC = () => {
             
             {/* Center - Main Highlight */}
             <div className="text-center">
-              <span className="text-orange-400 font-bold text-sm md:text-base font-poppins hover:text-orange-200 hover:shadow-lg transition-all duration-300 cursor-pointer hover:scale-110 transform inline-block px-2 py-1 rounded hover:bg-orange-500/20">
-                #1 Healthcare Training Institute
-              </span>
+              <div className="bg-orange-500 px-4 py-2 rounded-lg inline-block">
+                <span className="text-white font-bold text-sm md:text-base font-poppins">
+                  #1 Healthcare Training Institute
+                </span>
+              </div>
             </div>
             
-            {/* Right side - Tagline */}
+            {/* Right side - Animated Slogans */}
             <div className="text-white/90 hover:text-white transition-all duration-300 cursor-pointer hover:scale-105">
-              <span className="font-poppins text-sm hover:scale-105 hover:font-semibold transform inline-block transition-all duration-300">
-                Assured Healthcare Training • Career Focused
-              </span>
+              <AnimatedSlogan />
             </div>
           </div>
         </div>
@@ -149,16 +150,16 @@ const Header: React.FC = () => {
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo - Increased size and improved spacing */}
+          {/* Logo - Enlarged and properly aligned */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
             <img 
               src="/finallll.png" 
               alt="CliniGlobal Logo" 
-              className="h-20 w-20 md:h-24 md:w-24 mr-4 rounded-lg shadow-md"
+              className="h-16 w-16 md:h-20 md:w-20 mr-4 rounded-lg shadow-md object-contain"
             />
-            <div>
+            <div className="flex flex-col justify-center">
               {/* Larger, bold CliniGlobal text */}
-              <h1 className="text-2xl md:text-3xl font-bold cliniglobal-brand font-poppins">
+              <h1 className="text-3xl md:text-4xl font-bold cliniglobal-brand font-poppins leading-tight">
                 <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
               </h1>
               {/* Smaller, muted gray subtext */}
@@ -185,54 +186,68 @@ const Header: React.FC = () => {
             </button>
 
             {/* Courses Dropdown */}
-            <div className="relative dropdown-container">
+            <div 
+              className="relative dropdown-container"
+              onMouseEnter={() => setIsCoursesOpen(true)}
+              onMouseLeave={() => setIsCoursesOpen(false)}
+            >
               <button
-                onClick={handleCoursesDropdown}
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105 px-4 py-2 rounded-lg"
               >
                 <span className="font-poppins">Courses</span>
-                <ChevronDown size={16} className={`ml-1 transition-transform ${isCoursesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown size={16} className={`ml-1 transition-transform duration-300 ${isCoursesOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {isCoursesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white/95 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl py-4 z-50">
-                  <div className="px-4 py-2 border-b border-gray-200">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-b from-orange-50 to-white border border-orange-200 rounded-2xl shadow-2xl py-4 z-50 transform transition-all duration-300 ease-out animate-in slide-in-from-top-2">
+                  <div className="px-4 py-2 border-b border-orange-200">
                     <h3 className="font-semibold text-gray-900 font-poppins">Our Programs</h3>
                   </div>
                   <div className="py-2">
                     <button
                       onClick={() => handleCourseNavigation('/courses/crm')}
-                      className="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors"
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
                     >
-                      <div className="font-medium text-gray-900 font-poppins">PG Diploma in Clinical Research</div>
-                      <div className="text-sm text-gray-600 font-poppins">12 Months • Most Popular</div>
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">PG Diploma in Clinical Research</div>
+                      <div className="text-sm text-orange-600 font-poppins font-semibold">Most Popular</div>
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/adcr')}
-                      className="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors"
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
                     >
-                      <div className="font-medium text-gray-900 font-poppins">Advanced Diploma in Clinical Research</div>
-                      <div className="text-sm text-gray-600 font-poppins">6 Months • Fast Track</div>
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">Advanced Diploma in Clinical Research</div>
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/clinical-sas')}
-                      className="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors"
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
                     >
-                      <div className="font-medium text-gray-900 font-poppins">Advanced Diploma in Clinical SAS</div>
-                      <div className="text-sm text-gray-600 font-poppins">6 Months • Programming</div>
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">Advanced Diploma in Clinical SAS</div>
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/medical-coding')}
-                      className="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors"
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
                     >
-                      <div className="font-medium text-gray-900 font-poppins">Advanced Diploma in Medical Coding</div>
-                      <div className="text-sm text-gray-600 font-poppins">6 Months • High Demand</div>
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">Advanced Diploma in Medical Coding</div>
+                      <div className="text-sm text-orange-600 font-poppins font-semibold">Most Demand</div>
+                    </button>
+                    <button
+                      onClick={() => handleCourseNavigation('/courses/ai-ml')}
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
+                    >
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">PG Diploma in AI & ML Healthcare</div>
+                    </button>
+                    <button
+                      onClick={() => handleCourseNavigation('/courses/mba')}
+                      className="w-full text-left px-4 py-3 hover:bg-orange-100 transition-colors group"
+                    >
+                      <div className="font-medium text-gray-900 font-poppins group-hover:text-orange-600">MBA in Healthcare Management</div>
+                      <div className="text-sm text-orange-600 font-poppins font-semibold">Industry Endorsed</div>
                     </button>
                     <button
                       onClick={() => navigate('/courses')}
-                      className="w-full text-left px-4 py-3 text-blue-600 hover:bg-blue-50 transition-colors border-t border-gray-200 mt-2"
+                      className="w-full text-left px-4 py-3 text-orange-600 hover:bg-orange-100 transition-colors border-t border-orange-200 mt-2 group"
                     >
-                      <div className="font-medium font-poppins">View All Courses →</div>
+                      <div className="font-medium font-poppins group-hover:text-orange-700">View All Courses →</div>
                     </button>
                   </div>
                 </div>
@@ -317,31 +332,46 @@ const Header: React.FC = () => {
                   <div className="ml-4 mt-2 space-y-1">
                     <button
                       onClick={() => handleCourseNavigation('/courses/crm')}
-                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-poppins"
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
                     >
-                      PG Diploma in Clinical Research
+                      <div>PG Diploma in Clinical Research</div>
+                      <div className="text-xs text-orange-600 font-semibold">Most Popular</div>
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/adcr')}
-                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-poppins"
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
                     >
                       Advanced Diploma in Clinical Research
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/clinical-sas')}
-                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-poppins"
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
                     >
                       Advanced Diploma in Clinical SAS
                     </button>
                     <button
                       onClick={() => handleCourseNavigation('/courses/medical-coding')}
-                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-poppins"
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
                     >
-                      Advanced Diploma in Medical Coding
+                      <div>Advanced Diploma in Medical Coding</div>
+                      <div className="text-xs text-orange-600 font-semibold">Most Demand</div>
+                    </button>
+                    <button
+                      onClick={() => handleCourseNavigation('/courses/ai-ml')}
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
+                    >
+                      PG Diploma in AI & ML Healthcare
+                    </button>
+                    <button
+                      onClick={() => handleCourseNavigation('/courses/mba')}
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
+                    >
+                      <div>MBA in Healthcare Management</div>
+                      <div className="text-xs text-orange-600 font-semibold">Industry Endorsed</div>
                     </button>
                     <button
                       onClick={() => navigate('/courses')}
-                      className="block w-full text-left px-4 py-2 text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-poppins"
+                      className="block w-full text-left px-4 py-2 text-sm text-orange-600 hover:bg-orange-50 rounded-lg transition-colors font-poppins"
                     >
                       View All Courses →
                     </button>
