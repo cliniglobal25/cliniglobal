@@ -18,11 +18,11 @@ const AnimatedSlogan: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative h-6 overflow-hidden">
+    <div className="relative h-6 overflow-hidden w-full min-w-[200px]">
       {slogans.map((slogan, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out transform ${
             index === currentSlogan 
               ? 'translate-x-0 opacity-100' 
               : index < currentSlogan 
@@ -30,7 +30,7 @@ const AnimatedSlogan: React.FC = () => {
                 : 'translate-x-full opacity-0'
           }`}
         >
-          <span className="font-poppins text-sm text-white hover:scale-105 hover:font-semibold transform inline-block transition-all duration-300">
+          <span className="font-poppins text-sm text-white font-medium whitespace-nowrap">
             {slogan}
           </span>
         </div>

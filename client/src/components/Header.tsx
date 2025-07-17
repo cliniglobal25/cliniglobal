@@ -132,7 +132,7 @@ const Header: React.FC = () => {
             
             {/* Center - Main Highlight */}
             <div className="text-center">
-              <div className="bg-orange-500 px-4 py-2 rounded-lg inline-block">
+              <div className="bg-orange-300 px-4 py-2 rounded-lg inline-block">
                 <span className="text-white font-bold text-sm md:text-base font-poppins">
                   #1 Healthcare Training Institute
                 </span>
@@ -140,7 +140,7 @@ const Header: React.FC = () => {
             </div>
             
             {/* Right side - Animated Slogans */}
-            <div className="text-white/90 hover:text-white transition-all duration-300 cursor-pointer hover:scale-105">
+            <div className="text-white/90 hover:text-white transition-all duration-300 cursor-pointer hover:scale-105 flex items-center">
               <AnimatedSlogan />
             </div>
           </div>
@@ -150,16 +150,16 @@ const Header: React.FC = () => {
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo - Enlarged and properly aligned */}
+          {/* Logo - Further enlarged and properly aligned */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
             <img 
               src="/finallll.png" 
               alt="CliniGlobal Logo" 
-              className="h-16 w-16 md:h-20 md:w-20 mr-4 rounded-lg shadow-md object-contain"
+              className="h-20 w-20 md:h-24 md:w-24 mr-4 rounded-lg shadow-md object-contain"
             />
             <div className="flex flex-col justify-center">
               {/* Larger, bold CliniGlobal text */}
-              <h1 className="text-3xl md:text-4xl font-bold cliniglobal-brand font-poppins leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold cliniglobal-brand font-poppins leading-tight">
                 <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
               </h1>
               {/* Smaller, muted gray subtext */}
@@ -199,7 +199,7 @@ const Header: React.FC = () => {
               </button>
               
               {isCoursesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-b from-orange-50 to-white border border-orange-200 rounded-2xl shadow-2xl py-4 z-50 transform transition-all duration-300 ease-out animate-in slide-in-from-top-2">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-b from-orange-100 to-orange-50 border border-orange-200 rounded-2xl shadow-2xl py-4 z-50 transform transition-all duration-300 ease-out animate-in slide-in-from-top-2">
                   <div className="px-4 py-2 border-b border-orange-200">
                     <h3 className="font-semibold text-gray-900 font-poppins">Our Programs</h3>
                   </div>
