@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Clock, Users, Award, BookOpen, CheckCircle, Star, Calendar, Download, Phone, Mail, MapPin, Heart, Sparkles, GraduationCap, Target, TrendingUp, Shield, FileText, MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, Clock, Users, Award, BookOpen, CheckCircle, Star, Calendar, Download, Phone, Mail, MapPin, Heart, Sparkles, GraduationCap, Target, TrendingUp, Shield, FileText, MessageCircle, ChevronDown, ChevronUp, ArrowRight, Code, Database, Activity, Stethoscope, Brain, Eye, Laptop, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import ContactModal from '../components/ui/ContactModal';
 
@@ -209,108 +209,141 @@ const MedicalCodingCourse: React.FC = () => {
         </div>
       )}
 
-      {/* Header with Medical Coding Banner */}
-      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-12 relative overflow-hidden">
-        {/* Background Medical Coding Image */}
-        <div className="absolute inset-0 opacity-30">
-          <img 
-            src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
-            alt="Medical Coding and Healthcare Documentation" 
-            className="w-full h-full object-cover object-center brightness-125 contrast-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-600/70 via-green-600/50 to-blue-600/70"></div>
+      {/* Modern Visual Hero Section */}
+      <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute top-32 right-20 w-16 h-16 bg-yellow-400/20 rounded-lg animate-bounce"></div>
+          <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/3 w-18 h-18 bg-orange-400/20 rounded-lg animate-bounce"></div>
         </div>
 
-        {/* Floating Medical Coding Icons */}
+        {/* Medical Coding Visual Elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <FileText className="absolute top-10 right-1/4 text-white opacity-30 animate-bounce" size={32} style={{ animationDelay: '0s', animationDuration: '4s' }} />
-          <BookOpen className="absolute bottom-20 left-1/5 text-yellow-400 opacity-40 animate-bounce" size={28} style={{ animationDelay: '1s', animationDuration: '3.5s' }} />
-          <GraduationCap className="absolute top-1/3 left-1/6 text-white opacity-30 animate-bounce" size={30} style={{ animationDelay: '2s', animationDuration: '4.2s' }} />
-          <Award className="absolute top-2/3 right-1/6 text-yellow-400 opacity-35 animate-bounce" size={26} style={{ animationDelay: '1.5s', animationDuration: '3.8s' }} />
+          <div className="absolute top-16 left-1/4 flex items-center space-x-2 opacity-30">
+            <Code className="text-white" size={24} />
+            <span className="text-white font-mono">ICD-10</span>
+          </div>
+          <div className="absolute top-1/3 right-1/4 flex items-center space-x-2 opacity-30">
+            <Database className="text-yellow-400" size={24} />
+            <span className="text-white font-mono">CPT</span>
+          </div>
+          <div className="absolute bottom-1/3 left-1/6 flex items-center space-x-2 opacity-30">
+            <Activity className="text-orange-400" size={24} />
+            <span className="text-white font-mono">HCPCS</span>
+          </div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <button 
-            onClick={() => navigate('/')}
-            className="flex items-center text-white/80 hover:text-white mb-6 transition-colors"
-          >
-            <ArrowLeft size={20} className="mr-2" />
-            Back to Home
-          </button>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-6 font-poppins">
-                Turn Your Passion for Healthcare Into a Career in 
-                <span className="block text-yellow-400">Medical Coding!</span>
-              </h1>
-              <p className="text-lg md:text-xl text-white/90 mb-6 leading-relaxed font-poppins">
-                Our <strong>Medical Coding Certification Program</strong> is designed for students and professionals who want to build a career in the healthcare domain without being on the frontlines.
-              </p>
-              <p className="text-base md:text-lg text-white/80 mb-8 font-poppins">
-                Learn from certified trainers, gain hands-on experience, and get <strong>100% placement assistance</strong> to launch your career in the growing healthcare industry.
-              </p>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="text-center">
-                  <Clock className="mx-auto mb-2" size={24} />
-                  <div className="text-xl md:text-2xl font-bold font-poppins">6 Months</div>
-                  <div className="text-white/80 text-xs md:text-sm font-poppins">Duration</div>
-                </div>
-                <div className="text-center">
-                  <Award className="mx-auto mb-2" size={24} />
-                  <div className="text-xl md:text-2xl font-bold font-poppins">100%</div>
-                  <div className="text-white/80 text-xs md:text-sm font-poppins">Placement</div>
-                </div>
-                <div className="text-center">
-                  <Star className="mx-auto mb-2" size={24} />
-                  <div className="text-xl md:text-2xl font-bold font-poppins">4.8</div>
-                  <div className="text-white/80 text-xs md:text-sm font-poppins">Rating</div>
-                </div>
-                <div className="text-center">
-                  <GraduationCap className="mx-auto mb-2" size={24} />
-                  <div className="text-xl md:text-2xl font-bold font-poppins">2 Months</div>
-                  <div className="text-white/80 text-xs md:text-sm font-poppins">Internship</div>
-                </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-8">
+            <button
+              onClick={() => navigate('/')}
+              className="flex items-center text-white hover:text-yellow-400 transition-colors font-medium bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm"
+            >
+              <ArrowLeft className="mr-2" size={20} />
+              Back to Home
+            </button>
+          </div>
+
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-white/20 px-4 py-2 rounded-full mb-6">
+              <Stethoscope className="mr-2 text-yellow-400" size={20} />
+              <span className="text-white font-medium">Most Demand Program</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+              Medical Coding
+            </h1>
+            <p className="text-2xl text-gray-100 max-w-4xl mx-auto mb-8 leading-relaxed">
+              Master the art of transforming medical records into universal codes
+            </p>
+          </div>
+
+          {/* Visual Journey Flow */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center mb-8 text-white">Your Learning Journey</h3>
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+              <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
+                <Brain className="text-yellow-400 mx-auto mb-3" size={32} />
+                <h4 className="font-bold text-white mb-2">Learn</h4>
+                <p className="text-gray-200 text-sm">Master coding systems</p>
+              </div>
+              <ArrowRight className="text-white/50 rotate-90 md:rotate-0" size={24} />
+              <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
+                <Laptop className="text-orange-400 mx-auto mb-3" size={32} />
+                <h4 className="font-bold text-white mb-2">Practice</h4>
+                <p className="text-gray-200 text-sm">Hands-on coding</p>
+              </div>
+              <ArrowRight className="text-white/50 rotate-90 md:rotate-0" size={24} />
+              <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
+                <Award className="text-green-400 mx-auto mb-3" size={32} />
+                <h4 className="font-bold text-white mb-2">Certify</h4>
+                <p className="text-gray-200 text-sm">Get CPC certified</p>
+              </div>
+              <ArrowRight className="text-white/50 rotate-90 md:rotate-0" size={24} />
+              <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
+                <TrendingUp className="text-purple-400 mx-auto mb-3" size={32} />
+                <h4 className="font-bold text-white mb-2">Career</h4>
+                <p className="text-gray-200 text-sm">Land your dream job</p>
               </div>
             </div>
-            
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <h3 className="text-xl md:text-2xl font-bold mb-6 font-poppins">CliniGlobal Highlights</h3>
-              <ul className="space-y-3">
-                {highlights.map((highlight, index) => (
-                  <li key={index} className="flex items-center font-poppins text-sm md:text-base">
-                    <CheckCircle className="text-green-400 mr-3" size={20} />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="mt-8 space-y-4">
-                <div className="space-y-3">
-                  <button 
-                    onClick={() => window.open('http://cliniglobal.testpress.in', '_blank')}
-                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-[#1BA7C9] to-[#1BA7C9]/90 text-white px-6 py-3 rounded-full hover:from-[#1BA7C9]/90 hover:to-[#1BA7C9]/80 transition-colors font-medium font-poppins"
-                  >
-                    <GraduationCap size={18} />
-                    <span>Access LMS</span>
-                  </button>
-                  <button 
-                    onClick={() => openContactModal('enroll')}
-                    className="w-full bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors font-poppins"
-                  >
-                    Enroll Now
-                  </button>
-                </div>
-                <button 
-                  onClick={() => openContactModal('brochure')}
-                  className="w-full border border-white/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors flex items-center justify-center font-poppins"
-                >
-                  <Download className="mr-2" size={16} />
-                  Download Brochure
-                </button>
+          </div>
+
+          {/* Visual Stats Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="bg-white/15 backdrop-blur-lg border border-white/20 rounded-3xl p-6 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="bg-yellow-400/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="text-yellow-400" size={28} />
               </div>
+              <h3 className="font-bold text-white mb-2 text-lg">Duration</h3>
+              <p className="text-gray-200 text-xl font-semibold">6 Months</p>
             </div>
+            <div className="bg-white/15 backdrop-blur-lg border border-white/20 rounded-3xl p-6 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="bg-orange-400/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="text-orange-400" size={28} />
+              </div>
+              <h3 className="font-bold text-white mb-2 text-lg">Batch Size</h3>
+              <p className="text-gray-200 text-xl font-semibold">25 Students</p>
+            </div>
+            <div className="bg-white/15 backdrop-blur-lg border border-white/20 rounded-3xl p-6 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="bg-green-400/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="text-green-400" size={28} />
+              </div>
+              <h3 className="font-bold text-white mb-2 text-lg">Certification</h3>
+              <p className="text-gray-200 text-xl font-semibold">CPC Ready</p>
+            </div>
+            <div className="bg-white/15 backdrop-blur-lg border border-white/20 rounded-3xl p-6 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="bg-purple-400/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="text-purple-400" size={28} />
+              </div>
+              <h3 className="font-bold text-white mb-2 text-lg">Placement</h3>
+              <p className="text-gray-200 text-xl font-semibold">90% Success</p>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <button
+              onClick={() => openContactModal('enroll')}
+              className="flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-10 py-4 rounded-full font-bold text-xl hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            >
+              <Heart className="mr-3" size={24} />
+              Enroll Now
+            </button>
+            <button
+              onClick={() => openContactModal('counselling')}
+              className="flex items-center justify-center bg-white/20 hover:bg-white/30 text-white px-10 py-4 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
+            >
+              <Phone className="mr-3" size={24} />
+              Free Counselling
+            </button>
+            <button
+              onClick={() => openContactModal('brochure')}
+              className="flex items-center justify-center bg-transparent hover:bg-white/10 text-white px-10 py-4 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
+            >
+              <Download className="mr-3" size={24} />
+              Download Brochure
+            </button>
           </div>
         </div>
       </div>
@@ -339,32 +372,113 @@ const MedicalCodingCourse: React.FC = () => {
 
       {/* Course Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* About Course Section */}
+        {/* About Course Section - Visual & Diagrammatic */}
         <section id="about-course" className="mb-20">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About Medical Coding Course</h2>
-          <div className="bg-white/60 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-lg">
-            <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              Medical coders play a crucial role in transforming patient records into universal codes for billing, insurance, and hospital records. Our comprehensive Medical Coding Program is structured to provide both technical knowledge and essential workplace skills.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              You'll gain hands-on experience and exam-focused training that prepares you for a successful career in healthcare documentation and coding. The program covers all major coding systems including ICD-10, CPT, and HCPCS.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <div className="text-center p-6 bg-green-50 rounded-2xl">
-                <Target className="text-green-600 mx-auto mb-4" size={32} />
-                <h3 className="font-bold text-gray-900 mb-2">Industry-Focused</h3>
-                <p className="text-gray-600 text-sm">Curriculum designed with industry experts</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+            <span className="bg-gradient-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">About Medical Coding Course</span>
+          </h2>
+          
+          {/* Visual Process Flow */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">How Medical Coding Works</h3>
+            <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 border border-white/30 shadow-2xl">
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <FileText className="text-white" size={32} />
+                  </div>
+                  <h4 className="font-bold text-gray-900 mb-2">Patient Records</h4>
+                  <p className="text-gray-600 text-sm">Medical diagnoses & procedures</p>
+                </div>
+                <ArrowRight className="text-emerald-500 rotate-90 md:rotate-0" size={32} />
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-emerald-500 to-teal-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Code className="text-white" size={32} />
+                  </div>
+                  <h4 className="font-bold text-gray-900 mb-2">Medical Coding</h4>
+                  <p className="text-gray-600 text-sm">Transform to universal codes</p>
+                </div>
+                <ArrowRight className="text-emerald-500 rotate-90 md:rotate-0" size={32} />
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-orange-500 to-red-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Database className="text-white" size={32} />
+                  </div>
+                  <h4 className="font-bold text-gray-900 mb-2">Healthcare System</h4>
+                  <p className="text-gray-600 text-sm">Billing, insurance & records</p>
+                </div>
               </div>
-              <div className="text-center p-6 bg-blue-50 rounded-2xl">
-                <Award className="text-blue-600 mx-auto mb-4" size={32} />
-                <h3 className="font-bold text-gray-900 mb-2">CPC Certification</h3>
-                <p className="text-gray-600 text-sm">Complete preparation for AAPC certification</p>
+            </div>
+          </div>
+
+          {/* Three Pillars Visual */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Three Pillars of Medical Coding</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-gradient-to-r from-blue-500 to-blue-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Eye className="text-white" size={36} />
+                </div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">ICD-10</h4>
+                <p className="text-gray-700 mb-4">International Classification of Diseases</p>
+                <ul className="text-left space-y-2 text-gray-600">
+                  <li className="flex items-center"><CheckCircle className="text-blue-500 mr-2" size={16} />Diagnosis coding</li>
+                  <li className="flex items-center"><CheckCircle className="text-blue-500 mr-2" size={16} />Disease classification</li>
+                  <li className="flex items-center"><CheckCircle className="text-blue-500 mr-2" size={16} />Medical conditions</li>
+                </ul>
               </div>
-              <div className="text-center p-6 bg-orange-50 rounded-2xl">
-                <TrendingUp className="text-orange-600 mx-auto mb-4" size={32} />
-                <h3 className="font-bold text-gray-900 mb-2">Career Growth</h3>
-                <p className="text-gray-600 text-sm">100% placement assistance guaranteed</p>
+              
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-3xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Activity className="text-white" size={36} />
+                </div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">CPT</h4>
+                <p className="text-gray-700 mb-4">Current Procedural Terminology</p>
+                <ul className="text-left space-y-2 text-gray-600">
+                  <li className="flex items-center"><CheckCircle className="text-emerald-500 mr-2" size={16} />Procedure coding</li>
+                  <li className="flex items-center"><CheckCircle className="text-emerald-500 mr-2" size={16} />Medical services</li>
+                  <li className="flex items-center"><CheckCircle className="text-emerald-500 mr-2" size={16} />Treatment documentation</li>
+                </ul>
               </div>
+              
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="text-white" size={36} />
+                </div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">HCPCS</h4>
+                <p className="text-gray-700 mb-4">Healthcare Common Procedure Coding</p>
+                <ul className="text-left space-y-2 text-gray-600">
+                  <li className="flex items-center"><CheckCircle className="text-orange-500 mr-2" size={16} />Healthcare services</li>
+                  <li className="flex items-center"><CheckCircle className="text-orange-500 mr-2" size={16} />Medical supplies</li>
+                  <li className="flex items-center"><CheckCircle className="text-orange-500 mr-2" size={16} />Equipment coding</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Features Visual Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="bg-gradient-to-r from-green-500 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Target className="text-white" size={28} />
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">Industry-Focused</h4>
+              <p className="text-gray-600">Curriculum designed with industry experts and real-world applications</p>
+            </div>
+            
+            <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Award className="text-white" size={28} />
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">CPC Certification</h4>
+              <p className="text-gray-600">Complete preparation for AAPC certification with mock exams</p>
+            </div>
+            
+            <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <TrendingUp className="text-white" size={28} />
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">Career Growth</h4>
+              <p className="text-gray-600">100% placement assistance with salary growth guarantee</p>
             </div>
           </div>
         </section>
