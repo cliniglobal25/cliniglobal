@@ -132,7 +132,7 @@ const Header: React.FC = () => {
             
             {/* Center - Main Highlight */}
             <div className="text-center">
-              <div className="bg-orange-300 px-4 py-2 rounded-lg inline-block">
+              <div className="bg-orange-500 px-4 py-2 rounded-lg inline-block">
                 <span className="text-white font-bold text-sm md:text-base font-poppins">
                   #1 Healthcare Training Institute
                 </span>
