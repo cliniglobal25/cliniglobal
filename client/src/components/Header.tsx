@@ -132,8 +132,18 @@ const Header: React.FC = () => {
             
             {/* Center - Main Highlight */}
             <div className="text-center">
-              <div className="px-4 py-2 rounded-lg inline-block shadow-md" style={{ backgroundColor: '#FF6A00' }}>
-                <span className="text-white font-bold text-sm md:text-base font-poppins">
+              <div 
+                className="px-6 py-3 rounded-lg inline-block shadow-lg" 
+                style={{ 
+                  backgroundColor: '#FF6A00', 
+                  background: 'linear-gradient(135deg, #FF6A00 0%, #FF8533 100%)',
+                  border: '2px solid #FF6A00'
+                }}
+              >
+                <span 
+                  className="font-bold text-base md:text-lg font-poppins" 
+                  style={{ color: 'white', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}
+                >
                   #1 Healthcare Training Institute
                 </span>
               </div>
