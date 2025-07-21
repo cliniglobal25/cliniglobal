@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Award, Users, BookOpen, Heart, Star, Sparkles, St
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 py-20 overflow-hidden min-h-screen flex items-center">
+    <section id="home" className="relative bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 py-20 overflow-hidden min-h-screen flex items-center">
 
       {/* Enhanced Moving Background with Higher Opacity */}
       <div className="absolute inset-0">
@@ -46,62 +46,83 @@ const Hero: React.FC = () => {
             <div className="space-y-6">
               <div className="relative inline-block">
                 <svg 
-                  width="320" 
-                  height="60" 
-                  viewBox="0 0 320 60" 
+                  width="350" 
+                  height="70" 
+                  viewBox="0 0 350 70" 
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute inset-0"
+                  className="absolute -top-2 -left-2"
+                  style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.2))' }}
                 >
+                  {/* Main brush stroke with more pronounced texture */}
                   <path 
-                    d="M10,35 Q30,15 80,25 Q150,40 220,20 Q270,25 310,35 Q290,45 240,40 Q180,50 120,45 Q60,35 10,35 Z" 
+                    d="M5,35 Q25,10 70,20 Q120,45 180,15 Q240,35 290,20 Q330,30 345,40 Q325,55 275,50 Q220,60 160,55 Q100,45 50,50 Q20,40 5,35 Z" 
                     fill="url(#brushGradient)" 
                     stroke="none"
-                    opacity="0.9"
+                  />
+                  {/* Secondary irregular stroke for texture */}
+                  <path 
+                    d="M8,32 Q35,12 85,25 Q140,48 195,18 Q255,38 295,25 Q335,32 342,42 Q320,52 270,47 Q215,57 155,52 Q95,42 45,47 Q18,37 8,32 Z" 
+                    fill="url(#brushGradient2)" 
+                    stroke="none"
+                    opacity="0.7"
                   />
                   <defs>
                     <linearGradient id="brushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#2563eb" stopOpacity="0.8"/>
-                      <stop offset="30%" stopColor="#3b82f6" stopOpacity="0.9"/>
-                      <stop offset="70%" stopColor="#1d4ed8" stopOpacity="0.85"/>
-                      <stop offset="100%" stopColor="#1e40af" stopOpacity="0.8"/>
+                      <stop offset="0%" stopColor="#1e40af"/>
+                      <stop offset="25%" stopColor="#2563eb"/>
+                      <stop offset="50%" stopColor="#3b82f6"/>
+                      <stop offset="75%" stopColor="#1d4ed8"/>
+                      <stop offset="100%" stopColor="#1e40af"/>
+                    </linearGradient>
+                    <linearGradient id="brushGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#3b82f6"/>
+                      <stop offset="50%" stopColor="#1e40af"/>
+                      <stop offset="100%" stopColor="#2563eb"/>
                     </linearGradient>
                   </defs>
-                  {/* Add texture with multiple overlapping paths */}
+                  {/* Brush texture lines */}
                   <path 
-                    d="M15,32 Q40,18 85,28 Q140,42 200,22 Q250,27 305,37" 
+                    d="M12,28 Q45,8 90,22 Q150,50 210,20 Q270,40 320,28" 
                     fill="none" 
                     stroke="#1e40af" 
-                    strokeWidth="1" 
+                    strokeWidth="2" 
+                    opacity="0.4"
+                  />
+                  <path 
+                    d="M15,42 Q50,15 95,30 Q155,55 215,25 Q275,45 325,35" 
+                    fill="none" 
+                    stroke="#2563eb" 
+                    strokeWidth="1.5" 
                     opacity="0.3"
                   />
                   <path 
-                    d="M8,38 Q35,20 75,30 Q130,45 190,25 Q240,30 312,40" 
+                    d="M10,38 Q40,18 80,28 Q140,52 200,22 Q260,42 310,32" 
                     fill="none" 
                     stroke="#3b82f6" 
-                    strokeWidth="0.8" 
+                    strokeWidth="1" 
                     opacity="0.2"
                   />
                 </svg>
-                <div className="relative z-10 inline-flex items-center px-6 py-3 text-white text-sm font-medium">
+                <div className="relative z-10 inline-flex items-center px-8 py-4 text-white text-sm font-semibold tracking-wide">
                   <Award className="mr-2" size={16} />
                   #1 Healthcare Training Institute
                 </div>
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
                 Learn, Advance,
-                <span className="block text-blue-100">
+                <span className="block text-blue-600">
                   Accelerate Your Career
                 </span>
-                <span className="block text-2xl md:text-4xl group cursor-pointer font-poppins text-white">
+                <span className="block text-2xl md:text-4xl group cursor-pointer font-poppins text-gray-800">
                   With 
                   <span className="relative inline-block ml-2 underline-hover-continuous font-bold cliniglobal-brand font-poppins">
-                    <span className="cliniglobal-clini text-white">Clini</span><span className="cliniglobal-global text-blue-200">Global</span>
+                    <span className="cliniglobal-clini text-blue-600">Clini</span><span className="cliniglobal-global text-blue-800">Global</span>
                   </span>
                 </span>
               </h1>
               
-              <p className="text-lg md:text-xl text-blue-100 leading-relaxed font-medium font-poppins">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium font-poppins">
                 Step into the Future of Healthcare with New-Age Programs like Clinical Research, Medical Coding, 
                 Clinical SAS, Bioinformatics, AI & ML in Healthcare, MBA in Healthcare, and more – designed to 
                 equip you for tomorrow's medical and healthcare landscape.
@@ -114,7 +135,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-              <button className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white/30 backdrop-blur-md border border-blue-600/40 text-blue-800 rounded-full hover:bg-white/40 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium font-poppins text-sm md:text-base">
+              <button className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white/80 backdrop-blur-md border border-blue-600/40 text-blue-700 rounded-full hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium font-poppins text-sm md:text-base">
                 <Calendar className="mr-2" size={20} />
                 Schedule Free Counselling
               </button>
@@ -124,15 +145,15 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-8">
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 font-poppins">5000+</div>
-                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Students Trained</div>
+                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Students Trained</div>
               </div>
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-indigo-600 font-poppins">95%</div>
-                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Placement Rate</div>
+                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Placement Rate</div>
               </div>
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 font-poppins">50+</div>
-                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Industry Partners</div>
+                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Industry Partners</div>
               </div>
             </div>
           </div>
