@@ -11,49 +11,49 @@ const testimonials = [
     tempId: 0,
     testimonial: "Clini Global completely transformed my career. The CRM training approach and industry connections helped me secure a position at Pfizer within 2 months of course completion.",
     by: "Anita Desai, Clinical Research Manager at Pfizer India",
-    imgSrc: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/femal1_1753103497719.jpg"
   },
   {
     tempId: 1,
     testimonial: "The comprehensive Clinical SAS curriculum and hands-on training gave me the confidence to excel in statistical programming. Got a 250% salary hike at Novartis.",
     by: "Vikram Singh, Clinical SAS Programmer at Novartis",
-    imgSrc: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/men1_1753103497721.jpg"
   },
   {
     tempId: 2,
     testimonial: "From a complete beginner to working at J&J - this journey was made possible by Clini Global. The Bioinformatics program and expert mentorship made all the difference.",
     by: "Priyanka Sharma, Bioinformatics Specialist at Johnson & Johnson",
-    imgSrc: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/femal2_1753103497720.jpg"
   },
   {
     tempId: 3,
     testimonial: "The AI & ML in Healthcare program at Clini Global is unmatched. The real-world projects and case studies prepared me perfectly for my role at Roche.",
     by: "Rajesh Kumar, AI & ML Healthcare Specialist at Roche",
-    imgSrc: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/men2_1753103497722.jpg"
   },
   {
     tempId: 4,
     testimonial: "The MBA in Healthcare Management program provided excellent technical training and leadership skills development. Secured a management role at GSK.",
     by: "Meera Patel, Healthcare Operations Manager at GSK",
-    imgSrc: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/femal1_1753103497719.jpg"
   },
   {
     tempId: 5,
     testimonial: "The SAS programming and biostatistics course was incredibly comprehensive. The hands-on approach with real clinical data sets gave me practical experience.",
     by: "Arjun Reddy, Biostatistician at AstraZeneca",
-    imgSrc: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/men1_1753103497721.jpg"
   },
   {
     tempId: 6,
     testimonial: "Clini Global's placement support is exceptional. They worked tirelessly to help me land my dream job with 100% placement assistance.",
     by: "Kavya Nair, Clinical Data Manager at Merck",
-    imgSrc: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/femal2_1753103497720.jpg"
   },
   {
     tempId: 7,
     testimonial: "The faculty support and industry-relevant curriculum at Clini Global is outstanding. Best investment in my healthcare career!",
     by: "Amit Gupta, Regulatory Affairs Specialist at Cipla",
-    imgSrc: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    imgSrc: "/attached_assets/men2_1753103497722.jpg"
   },
   {
     tempId: 8,

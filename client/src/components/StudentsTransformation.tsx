@@ -20,7 +20,7 @@ const StudentsTransformation: React.FC = () => {
       quote: "The mentors at CliniGlobal guided me step by step through Pharmacovigilance training. Today, I am proud to be part of Biocon's Drug Safety team. The placement support was incredible - got placed within 2 weeks!",
       name: "Sneha Kulkarni",
       designation: "Drug Safety Associate @ Biocon",
-      src: "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
+      src: "/attached_assets/femal1_1753103497719.jpg",
     },
     {
       quote: "The hands-on projects and real clinical trial experience were amazing! CliniGlobal's Clinical Data Management course helped me crack my interview at Fortis Healthcare as a Data Manager within weeks of completion.",
@@ -32,7 +32,7 @@ const StudentsTransformation: React.FC = () => {
       quote: "CliniGlobal's mock interviews, resume building, and practical Medical Coding training helped me land my first job in Clinical Research at Sun Pharma. From fresher to professional in just 4 months!",
       name: "Aarti Mishra",
       designation: "Clinical Research Coordinator @ Sun Pharma",
-      src: "/attached_assets/femal1_1753103497719.jpg",
+      src: "/attached_assets/femal2_1753103497720.jpg",
     },
   ];
 

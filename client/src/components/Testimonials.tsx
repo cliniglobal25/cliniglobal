@@ -5,31 +5,31 @@ import { TestimonialSlider } from './ui/testimonial-slider';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      img: "/attached_assets/femal1_1753103497719.jpg",
       quote: "CliniGlobal's Clinical Research program was a game-changer for my career. The faculty were exceptional, and the practical exposure prepared me perfectly for my role as a CRA.",
       name: "Anita Desai",
       role: "Clinical Research Manager at Pfizer India",
     },
     {
-      img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      img: "/attached_assets/men1_1753103497721.jpg",
       quote: "The comprehensive Clinical SAS curriculum and hands-on training gave me the confidence to excel in statistical programming. Got a 250% salary hike at Novartis.",
       name: "Vikram Singh",
       role: "Clinical SAS Programmer at Novartis",
     },
     {
-      img: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      img: "/attached_assets/femal2_1753103497720.jpg",
       quote: "From a complete beginner to working at J&J - this journey was made possible by CliniGlobal. The Bioinformatics program and expert mentorship made all the difference.",
       name: "Priyanka Sharma",
       role: "Bioinformatics Specialist at Johnson & Johnson",
     },
     {
-      img: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      img: "/attached_assets/men2_1753103497722.jpg",
       quote: "The AI & ML in Healthcare program at CliniGlobal is unmatched. The real-world projects and case studies prepared me perfectly for my role at Roche.",
       name: "Rajesh Kumar",
       role: "AI & ML Healthcare Specialist at Roche",
     },
     {
-      img: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      img: "/attached_assets/femal1_1753103497719.jpg",
       quote: "The MBA in Healthcare Management program provided excellent technical training and leadership skills development. Secured a management role at GSK.",
       name: "Meera Patel",
       role: "Healthcare Operations Manager at GSK",
