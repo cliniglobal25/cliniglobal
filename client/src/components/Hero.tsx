@@ -3,50 +3,7 @@ import { ArrowRight, Calendar, Award, Users, BookOpen, Heart, Star, Sparkles, St
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 overflow-hidden min-h-screen flex items-center">
-      {/* Large Healthcare Professional Banner Background */}
-      <div className="absolute inset-0">
-        {/* Main large banner image with overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
-            alt="Healthcare Professionals Team" 
-            className="w-full h-full object-cover object-center"
-          />
-          {/* Gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/60 to-white/80"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40"></div>
-        </div>
-
-        {/* Secondary banner images for depth */}
-        <div className="absolute top-0 left-0 w-1/3 h-full opacity-15">
-          <img 
-            src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop" 
-            alt="Healthcare Professional" 
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/90"></div>
-        </div>
-
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-15">
-          <img 
-            src="https://images.pexels.com/photos/4173277/pexels-photo-4173277.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop" 
-            alt="Healthcare Professional" 
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-white/90"></div>
-        </div>
-
-        {/* Bottom banner strip */}
-        <div className="absolute bottom-0 left-0 w-full h-1/4 opacity-10">
-          <img 
-            src="https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&fit=crop" 
-            alt="Healthcare Team" 
-            className="w-full h-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/80"></div>
-        </div>
-      </div>
+    <section id="home" className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 py-20 overflow-hidden min-h-screen flex items-center">
 
       {/* Enhanced Moving Background with Higher Opacity */}
       <div className="absolute inset-0">
@@ -87,25 +44,25 @@ const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-white/40 backdrop-blur-md border border-white/30 text-blue-700 rounded-full text-sm font-medium shadow-lg animate-pulse">
+              <div className="inline-flex items-center px-4 py-2 bg-white/40 backdrop-blur-md border border-white/30 text-blue-800 rounded-full text-sm font-medium shadow-lg animate-pulse">
                 <Award className="mr-2" size={16} />
                 #1 Healthcare Training Institute
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                 Learn, Advance,
-                <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                <span className="block text-blue-100">
                   Accelerate Your Career
                 </span>
-                <span className="block text-2xl md:text-4xl group cursor-pointer font-poppins">
+                <span className="block text-2xl md:text-4xl group cursor-pointer font-poppins text-white">
                   With 
                   <span className="relative inline-block ml-2 underline-hover-continuous font-bold cliniglobal-brand font-poppins">
-                    <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
+                    <span className="cliniglobal-clini text-white">Clini</span><span className="cliniglobal-global text-blue-200">Global</span>
                   </span>
                 </span>
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium font-poppins">
+              <p className="text-lg md:text-xl text-blue-100 leading-relaxed font-medium font-poppins">
                 Step into the Future of Healthcare with New-Age Programs like Clinical Research, Medical Coding, 
                 Clinical SAS, Bioinformatics, AI & ML in Healthcare, MBA in Healthcare, and more – designed to 
                 equip you for tomorrow's medical and healthcare landscape.
@@ -118,7 +75,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-              <button className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white/30 backdrop-blur-md border border-blue-600/40 text-blue-700 rounded-full hover:bg-white/40 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium font-poppins text-sm md:text-base">
+              <button className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white/30 backdrop-blur-md border border-blue-600/40 text-blue-800 rounded-full hover:bg-white/40 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium font-poppins text-sm md:text-base">
                 <Calendar className="mr-2" size={20} />
                 Schedule Free Counselling
               </button>
@@ -128,15 +85,15 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-8">
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 font-poppins">5000+</div>
-                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Students Trained</div>
+                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Students Trained</div>
               </div>
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-indigo-600 font-poppins">95%</div>
-                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Placement Rate</div>
+                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Placement Rate</div>
               </div>
               <div className="text-center p-4 bg-white/30 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 font-poppins">50+</div>
-                <div className="text-xs md:text-sm text-gray-700 font-medium font-poppins">Industry Partners</div>
+                <div className="text-xs md:text-sm text-blue-800 font-medium font-poppins">Industry Partners</div>
               </div>
             </div>
           </div>

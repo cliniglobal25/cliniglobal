@@ -7,6 +7,7 @@ CliniGlobal is a comprehensive healthcare training platform built with modern we
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Banner design preference: Blue background without background images (updated 2025-01-21).
 
 ## System Architecture
 
