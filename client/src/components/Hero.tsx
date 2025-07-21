@@ -45,8 +45,8 @@ const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-semibold tracking-wide rounded-full shadow-lg">
-                <Award className="mr-2" size={16} />
+              <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold tracking-wide rounded-full shadow-md">
+                <Award className="mr-1" size={12} />
                 #1 Healthcare Training Institute
               </div>
               

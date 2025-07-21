@@ -4,7 +4,7 @@ const AnimatedSlogan: React.FC = () => {
   const slogans = [
     "Shaping Healthcare Careers",
     "Job-Ready Training",
-    "Gateway to a Healthcare Profession"
+    "Assured Job Placements"
   ];
   
   const [currentSlogan, setCurrentSlogan] = useState(0);
