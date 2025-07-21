@@ -47,64 +47,57 @@ const Hero: React.FC = () => {
             <div className="space-y-6">
               <div className="relative inline-block">
                 <svg 
-                  width="350" 
-                  height="70" 
-                  viewBox="0 0 350 70" 
+                  width="280" 
+                  height="50" 
+                  viewBox="0 0 280 50" 
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute -top-2 -left-2"
+                  className="absolute -top-1 -left-1"
                   style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.2))' }}
                 >
-                  {/* Main brush stroke with more pronounced texture */}
+                  {/* Main orange brush stroke */}
                   <path 
-                    d="M5,35 Q25,10 70,20 Q120,45 180,15 Q240,35 290,20 Q330,30 345,40 Q325,55 275,50 Q220,60 160,55 Q100,45 50,50 Q20,40 5,35 Z" 
-                    fill="url(#brushGradient)" 
+                    d="M3,25 Q20,8 60,15 Q110,35 160,12 Q210,28 240,15 Q270,22 277,30 Q260,42 220,38 Q170,48 120,43 Q70,33 35,38 Q15,30 3,25 Z" 
+                    fill="url(#orangeBrushGradient)" 
                     stroke="none"
                   />
                   {/* Secondary irregular stroke for texture */}
                   <path 
-                    d="M8,32 Q35,12 85,25 Q140,48 195,18 Q255,38 295,25 Q335,32 342,42 Q320,52 270,47 Q215,57 155,52 Q95,42 45,47 Q18,37 8,32 Z" 
-                    fill="url(#brushGradient2)" 
+                    d="M5,22 Q25,6 65,18 Q120,38 165,15 Q215,31 245,18 Q275,25 275,32 Q255,40 215,35 Q165,45 115,40 Q65,30 30,35 Q12,27 5,22 Z" 
+                    fill="url(#orangeBrushGradient2)" 
                     stroke="none"
-                    opacity="0.7"
+                    opacity="0.8"
                   />
                   <defs>
-                    <linearGradient id="brushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#1e40af"/>
-                      <stop offset="25%" stopColor="#2563eb"/>
-                      <stop offset="50%" stopColor="#3b82f6"/>
-                      <stop offset="75%" stopColor="#1d4ed8"/>
-                      <stop offset="100%" stopColor="#1e40af"/>
+                    <linearGradient id="orangeBrushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#ea580c"/>
+                      <stop offset="25%" stopColor="#f97316"/>
+                      <stop offset="50%" stopColor="#fb923c"/>
+                      <stop offset="75%" stopColor="#fd7c00"/>
+                      <stop offset="100%" stopColor="#ea580c"/>
                     </linearGradient>
-                    <linearGradient id="brushGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#3b82f6"/>
-                      <stop offset="50%" stopColor="#1e40af"/>
-                      <stop offset="100%" stopColor="#2563eb"/>
+                    <linearGradient id="orangeBrushGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#fb923c"/>
+                      <stop offset="50%" stopColor="#ea580c"/>
+                      <stop offset="100%" stopColor="#f97316"/>
                     </linearGradient>
                   </defs>
-                  {/* Brush texture lines */}
+                  {/* Orange brush texture lines */}
                   <path 
-                    d="M12,28 Q45,8 90,22 Q150,50 210,20 Q270,40 320,28" 
+                    d="M8,20 Q35,5 70,17 Q120,37 170,15 Q220,30 260,20" 
                     fill="none" 
-                    stroke="#1e40af" 
-                    strokeWidth="2" 
+                    stroke="#ea580c" 
+                    strokeWidth="1.5" 
                     opacity="0.4"
                   />
                   <path 
-                    d="M15,42 Q50,15 95,30 Q155,55 215,25 Q275,45 325,35" 
+                    d="M10,32 Q40,10 75,25 Q125,42 175,22 Q225,35 265,28" 
                     fill="none" 
-                    stroke="#2563eb" 
-                    strokeWidth="1.5" 
+                    stroke="#f97316" 
+                    strokeWidth="1" 
                     opacity="0.3"
                   />
-                  <path 
-                    d="M10,38 Q40,18 80,28 Q140,52 200,22 Q260,42 310,32" 
-                    fill="none" 
-                    stroke="#3b82f6" 
-                    strokeWidth="1" 
-                    opacity="0.2"
-                  />
                 </svg>
-                <div className="relative z-10 inline-flex items-center px-8 py-4 text-white text-sm font-semibold tracking-wide">
+                <div className="relative z-10 inline-flex items-center px-6 py-3 text-white text-sm font-semibold tracking-wide">
                   <Award className="mr-2" size={16} />
                   #1 Healthcare Training Institute
                 </div>
