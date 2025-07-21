@@ -21,16 +21,16 @@ const Footer: React.FC = () => {
               bioinformatics, and healthcare management programs.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://www.facebook.com/profile.php?id=61577929286471" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
                 <Facebook size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://www.linkedin.com/company/cliniglobal/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://www.instagram.com/cliniglobal/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors duration-300 hover:scale-110 transform">
                 <Instagram size={20} />
               </a>
             </div>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                   <Phone size={16} className="text-blue-600" />
                 </div>
                 <div>
-                  <p className="text-gray-700 font-poppins">+919052992967</p>
+                  <p className="text-gray-700 font-poppins">+917093794447</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 group">
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                   <Mail size={16} className="text-blue-600" />
                 </div>
                 <div>
-                  <p className="text-gray-700 font-poppins">info@cliniglobal.com</p>
+                  <p className="text-gray-700 font-poppins">hr@cliniglobal.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 group">
@@ -74,10 +74,21 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-gray-700 font-poppins text-sm leading-relaxed">
-                    125, 7th Cross Road, Off Bannerghatta Road<br/>
-                    Dollar Layout, BTM 2nd Stage<br/>
-                    Bangalore, Karnataka 560068
+                    Learning Center - Hyderabad<br/>
+                    CliniGlobal Research Institute<br/>
+                    303, Meghamala Apartment road,<br/>
+                    Kumar Basti, Srinivasa Nagar, Ameerpet,<br/>
+                    Hyderabad, Telangana - 500082
                   </p>
+                  <a 
+                    href="https://maps.google.com/?q=303,+Meghamala+Apartment+road,+Kumar+Basti,+Srinivasa+Nagar,+Ameerpet,+Hyderabad,+Telangana+500082" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 text-sm font-poppins hover:underline inline-flex items-center mt-2"
+                  >
+                    <MapPin size={14} className="mr-1" />
+                    Get Directions
+                  </a>
                 </div>
               </div>
             </div>
