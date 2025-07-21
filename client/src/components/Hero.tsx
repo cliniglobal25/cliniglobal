@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Calendar, Award, Users, BookOpen, Heart, Star, Sparkles, Stethoscope, Activity, Brain, Microscope, Pill, Shield, Zap, Database } from 'lucide-react';
+import cliniglobalImage from '@assets/ChatGPT Image Jul 21, 2025, 04_36_06 PM_1753096002378.png';
 
 const Hero: React.FC = () => {
   return (
@@ -161,7 +162,7 @@ const Hero: React.FC = () => {
               {/* CliniGlobal Instagram Post Image */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/attached_assets/ChatGPT Image Jul 21, 2025, 04_36_06 PM_1753096002378.png"
+                  src={cliniglobalImage}
                   alt="CliniGlobal Research Institute - Happy Student" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
