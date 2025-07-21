@@ -9,11 +9,6 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4 lg:col-span-2">
             <div className="flex items-center">
-              <img 
-                src="/finallll.png" 
-                alt="CliniGlobal Logo" 
-                className="h-12 w-12 mr-3 rounded-lg shadow-sm"
-              />
               <div>
                 <h3 className="text-xl font-bold cliniglobal-brand font-poppins">
                   <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>

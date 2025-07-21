@@ -162,11 +162,6 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo - Properly sized and aligned */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
-            <img 
-              src="/finallll.png" 
-              alt="CliniGlobal Logo" 
-              className="h-12 w-12 md:h-14 md:w-14 mr-3 rounded-lg shadow-md object-contain"
-            />
             <div className="flex flex-col justify-center">
               {/* CliniGlobal text - increased size for better visibility */}
               <h1 className="text-2xl md:text-3xl font-bold cliniglobal-brand font-poppins leading-tight">
