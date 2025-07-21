@@ -45,62 +45,9 @@ const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="relative inline-block">
-                <svg 
-                  width="280" 
-                  height="50" 
-                  viewBox="0 0 280 50" 
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="absolute -top-1 -left-1"
-                  style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.2))' }}
-                >
-                  {/* Main orange brush stroke */}
-                  <path 
-                    d="M3,25 Q20,8 60,15 Q110,35 160,12 Q210,28 240,15 Q270,22 277,30 Q260,42 220,38 Q170,48 120,43 Q70,33 35,38 Q15,30 3,25 Z" 
-                    fill="url(#orangeBrushGradient)" 
-                    stroke="none"
-                  />
-                  {/* Secondary irregular stroke for texture */}
-                  <path 
-                    d="M5,22 Q25,6 65,18 Q120,38 165,15 Q215,31 245,18 Q275,25 275,32 Q255,40 215,35 Q165,45 115,40 Q65,30 30,35 Q12,27 5,22 Z" 
-                    fill="url(#orangeBrushGradient2)" 
-                    stroke="none"
-                    opacity="0.8"
-                  />
-                  <defs>
-                    <linearGradient id="orangeBrushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#ea580c"/>
-                      <stop offset="25%" stopColor="#f97316"/>
-                      <stop offset="50%" stopColor="#fb923c"/>
-                      <stop offset="75%" stopColor="#fd7c00"/>
-                      <stop offset="100%" stopColor="#ea580c"/>
-                    </linearGradient>
-                    <linearGradient id="orangeBrushGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#fb923c"/>
-                      <stop offset="50%" stopColor="#ea580c"/>
-                      <stop offset="100%" stopColor="#f97316"/>
-                    </linearGradient>
-                  </defs>
-                  {/* Orange brush texture lines */}
-                  <path 
-                    d="M8,20 Q35,5 70,17 Q120,37 170,15 Q220,30 260,20" 
-                    fill="none" 
-                    stroke="#ea580c" 
-                    strokeWidth="1.5" 
-                    opacity="0.4"
-                  />
-                  <path 
-                    d="M10,32 Q40,10 75,25 Q125,42 175,22 Q225,35 265,28" 
-                    fill="none" 
-                    stroke="#f97316" 
-                    strokeWidth="1" 
-                    opacity="0.3"
-                  />
-                </svg>
-                <div className="relative z-10 inline-flex items-center px-6 py-3 text-white text-sm font-semibold tracking-wide">
-                  <Award className="mr-2" size={16} />
-                  #1 Healthcare Training Institute
-                </div>
+              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-semibold tracking-wide rounded-full shadow-lg">
+                <Award className="mr-2" size={16} />
+                #1 Healthcare Training Institute
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
