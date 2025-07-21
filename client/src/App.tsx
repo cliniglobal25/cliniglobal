@@ -11,7 +11,7 @@ import Placements from './components/Placements';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Chatbot from './components/Chatbot';
+import QueryWidget from './components/QueryWidget';
 import CRMCourse from './pages/CRMCourse';
 import MedicalCodingCourse from './pages/MedicalCodingCourse';
 import ClinicalSASCourse from './pages/ClinicalSASCourse';
@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
         <Contact />
       </main>
       <Footer />
-      <Chatbot />
+      <QueryWidget />
     </>
   );
 };
@@ -49,7 +49,7 @@ const CoursePageLayout: React.FC<{ children: React.ReactNode }> = ({ children })
       <Header />
       <main>{children}</main>
       <Footer />
-      <Chatbot />
+      <QueryWidget />
     </>
   );
 };

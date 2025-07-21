@@ -8,6 +8,8 @@ CliniGlobal is a comprehensive healthcare training platform built with modern we
 
 Preferred communication style: Simple, everyday language.
 Banner design preference: Blue background without background images (updated 2025-01-21).
+Contact preferences: WhatsApp contact preferred over traditional chatbot, phone number +917093794447 (updated 2025-01-21).
+Student testimonial preference: Use authentic Indian student photos provided by user (updated 2025-01-21).
 
 ## System Architecture
 
@@ -56,7 +58,8 @@ Banner design preference: Blue background without background images (updated 202
 
 ### Communication Systems
 - Multi-channel contact forms (general, callback, enrollment)
-- Integrated chatbot for customer support
+- "Drop us a Query" widget replacing traditional chatbot
+- WhatsApp integration with +917093794447 for instant contact
 - Email integration via external webhook services
 - Phone and location-based contact methods
 

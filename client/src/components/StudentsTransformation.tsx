@@ -8,13 +8,13 @@ const StudentsTransformation: React.FC = () => {
       quote: "CliniGlobal completely transformed my career. After 6 months of intensive training in Clinical Research, I secured a position as Clinical Data Analyst at Apollo Hospitals. The faculty support and practical training were exceptional!",
       name: "Priya Nair",
       designation: "Clinical Data Analyst @ Apollo Hospitals",
-      src: "https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
+      src: "/attached_assets/femal2_1753103497720.jpg",
     },
     {
       quote: "Thanks to CliniGlobal's comprehensive Clinical Research program, I mastered GCP guidelines and regulatory processes. Now I work as a Clinical Research Associate at Cipla with 200% salary hike. Best decision of my life!",
       name: "Rohit Verma",
       designation: "Clinical Research Associate @ Cipla",
-      src: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
+      src: "/attached_assets/men1_1753103497721.jpg",
     },
     {
       quote: "The mentors at CliniGlobal guided me step by step through Pharmacovigilance training. Today, I am proud to be part of Biocon's Drug Safety team. The placement support was incredible - got placed within 2 weeks!",
@@ -26,13 +26,13 @@ const StudentsTransformation: React.FC = () => {
       quote: "The hands-on projects and real clinical trial experience were amazing! CliniGlobal's Clinical Data Management course helped me crack my interview at Fortis Healthcare as a Data Manager within weeks of completion.",
       name: "Aditya Sharma",
       designation: "Clinical Data Manager @ Fortis Healthcare",
-      src: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
+      src: "/attached_assets/men2_1753103497722.jpg",
     },
     {
       quote: "CliniGlobal's mock interviews, resume building, and practical Medical Coding training helped me land my first job in Clinical Research at Sun Pharma. From fresher to professional in just 4 months!",
       name: "Aarti Mishra",
       designation: "Clinical Research Coordinator @ Sun Pharma",
-      src: "https://images.pexels.com/photos/1729931/pexels-photo-1729931.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop",
+      src: "/attached_assets/femal1_1753103497719.jpg",
     },
   ];
 
