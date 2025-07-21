@@ -135,10 +135,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-              <button className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white/80 backdrop-blur-md border border-blue-600/40 text-blue-700 rounded-full hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium font-poppins text-sm md:text-base">
-                <Calendar className="mr-2" size={20} />
-                Schedule Free Counselling
-              </button>
+
             </div>
 
             {/* Stats */}
@@ -158,50 +155,16 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Content - Enhanced Hero Visual with Healthcare Video */}
+          {/* Right Content - CliniGlobal Instagram Post */}
           <div className="relative">
-            <div className="relative bg-white/40 backdrop-blur-lg border border-white/30 p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500">
-              <div className="aspect-video bg-gradient-to-br from-blue-100/80 to-indigo-100/80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/15 to-indigo-600/15"></div>
-                
-                {/* Healthcare Video Background */}
-                <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <video 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline
-                    className="w-full h-full object-cover opacity-70"
-                    poster="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                  >
-                    <source src="https://videos.pexels.com/video-files/6823568/6823568-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-                    <source src="https://videos.pexels.com/video-files/6823568/6823568-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                    <source src="https://videos.pexels.com/video-files/4098878/4098878-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                    {/* Fallback image if video doesn't load */}
-                    <img 
-                      src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
-                      alt="Healthcare Professionals" 
-                      className="w-full h-full object-cover"
-                    />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30"></div>
-                </div>
-                
-                {/* Animated healthcare icons inside the video area */}
-                <div className="absolute inset-0 pointer-events-none">
-                  <Stethoscope className="absolute top-4 left-4 text-white opacity-80 animate-pulse drop-shadow-lg" size={24} style={{ animationDelay: '0s' }} />
-                  <Activity className="absolute top-4 right-4 text-green-400 opacity-90 animate-pulse drop-shadow-lg" size={22} style={{ animationDelay: '1s' }} />
-                  <Brain className="absolute bottom-4 left-4 text-purple-400 opacity-85 animate-pulse drop-shadow-lg" size={26} style={{ animationDelay: '2s' }} />
-                  <Microscope className="absolute bottom-4 right-4 text-blue-400 opacity-90 animate-pulse drop-shadow-lg" size={24} style={{ animationDelay: '1.5s' }} />
-                </div>
-                
-                <div className="relative z-10 text-center">
-                  <div className="w-20 h-20 bg-white/95 backdrop-blur-md rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer">
-                    <Calendar className="text-blue-600 ml-1" size={32} />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">Schedule Free Counselling</h3>
-                  <p className="text-white/90 font-medium drop-shadow-md">Get personalized career guidance from our experts</p>
-                </div>
+            <div className="relative bg-white/40 backdrop-blur-lg border border-white/30 p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500">
+              {/* CliniGlobal Instagram Post Image */}
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/attached_assets/ChatGPT Image Jul 21, 2025, 04_36_06 PM_1753096002378.png"
+                  alt="CliniGlobal Research Institute - Happy Student" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
               
               {/* Course Highlights with Healthcare Icons */}
