@@ -44,9 +44,48 @@ const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-white/40 backdrop-blur-md border border-white/30 text-blue-800 rounded-full text-sm font-medium shadow-lg animate-pulse">
-                <Award className="mr-2" size={16} />
-                #1 Healthcare Training Institute
+              <div className="relative inline-block">
+                <svg 
+                  width="320" 
+                  height="60" 
+                  viewBox="0 0 320 60" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute inset-0"
+                >
+                  <path 
+                    d="M10,35 Q30,15 80,25 Q150,40 220,20 Q270,25 310,35 Q290,45 240,40 Q180,50 120,45 Q60,35 10,35 Z" 
+                    fill="url(#brushGradient)" 
+                    stroke="none"
+                    opacity="0.9"
+                  />
+                  <defs>
+                    <linearGradient id="brushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#2563eb" stopOpacity="0.8"/>
+                      <stop offset="30%" stopColor="#3b82f6" stopOpacity="0.9"/>
+                      <stop offset="70%" stopColor="#1d4ed8" stopOpacity="0.85"/>
+                      <stop offset="100%" stopColor="#1e40af" stopOpacity="0.8"/>
+                    </linearGradient>
+                  </defs>
+                  {/* Add texture with multiple overlapping paths */}
+                  <path 
+                    d="M15,32 Q40,18 85,28 Q140,42 200,22 Q250,27 305,37" 
+                    fill="none" 
+                    stroke="#1e40af" 
+                    strokeWidth="1" 
+                    opacity="0.3"
+                  />
+                  <path 
+                    d="M8,38 Q35,20 75,30 Q130,45 190,25 Q240,30 312,40" 
+                    fill="none" 
+                    stroke="#3b82f6" 
+                    strokeWidth="0.8" 
+                    opacity="0.2"
+                  />
+                </svg>
+                <div className="relative z-10 inline-flex items-center px-6 py-3 text-white text-sm font-medium">
+                  <Award className="mr-2" size={16} />
+                  #1 Healthcare Training Institute
+                </div>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
