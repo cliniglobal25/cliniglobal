@@ -20,7 +20,7 @@ const StudentsTransformation: React.FC = () => {
       quote: "The mentors at CliniGlobal guided me step by step through Pharmacovigilance training. Today, I am proud to be part of Biocon's Drug Safety team. The placement support was incredible - got placed within 2 weeks!",
       name: "Sneha Kulkarni",
       designation: "Drug Safety Associate @ Biocon",
-      src: "/attached_assets/femal1_1753103497719.jpg",
+      src: "/attached_assets/femal2_1753103497720.jpg",
     },
     {
       quote: "The hands-on projects and real clinical trial experience were amazing! CliniGlobal's Clinical Data Management course helped me crack my interview at Fortis Healthcare as a Data Manager within weeks of completion.",
@@ -32,30 +32,30 @@ const StudentsTransformation: React.FC = () => {
       quote: "CliniGlobal's mock interviews, resume building, and practical Medical Coding training helped me land my first job in Clinical Research at Sun Pharma. From fresher to professional in just 4 months!",
       name: "Aarti Mishra",
       designation: "Clinical Research Coordinator @ Sun Pharma",
-      src: "/attached_assets/femal2_1753103497720.jpg",
+      src: "/attached_assets/femal1_1753103497719.jpg",
     },
   ];
 
   const healthcareCompanies = [
     { 
       name: 'Max Healthcare', 
-      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+      logo: '/attached_assets/max%20healthcare_1752659060506.PNG'
     },
     { 
       name: 'Manipal Hospitals', 
-      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+      logo: '/attached_assets/manipal%20hospital_1752659060505.PNG'
     },
     { 
       name: 'Narayana Health', 
-      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+      logo: '/attached_assets/narayana_1752659060507.PNG'
     },
     { 
       name: 'Dr. Reddy\'s Labs', 
-      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+      logo: '/attached_assets/dr%20reddy_1752659060504.PNG'
     },
     { 
       name: 'Biocon', 
-      logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+      logo: '/attached_assets/biocon_1752659060503.PNG'
     }
   ];
 
@@ -92,80 +92,34 @@ const StudentsTransformation: React.FC = () => {
             Our Students Are Placed At
           </h3>
           
-          {/* Clean scrolling logo section */}
-          <div className="relative overflow-hidden bg-white py-8 shadow-sm">
-            <div className="flex animate-scroll-left space-x-16">
+          {/* Moving logo section with real company logos */}
+          <div className="relative overflow-hidden bg-gradient-to-r from-gray-50 via-white to-gray-50 py-12 shadow-inner">
+            <div className="flex animate-scroll-horizontal">
               {/* First set of logos */}
-              <div className="flex items-center justify-center min-w-[200px] h-20">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">MAX</div>
-                  <div className="text-sm text-blue-800">HEALTHCARE</div>
+              {healthcareCompanies.map((company, index) => (
+                <div key={`first-${index}`} className="flex-shrink-0 flex items-center justify-center w-48 h-24 px-4">
+                  <img 
+                    src={company.logo} 
+                    alt={company.name}
+                    className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300 filter grayscale-0 brightness-110"
+                  />
                 </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[250px] h-20">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-blue-600 mb-1">manipal</div>
-                  <div className="text-lg font-bold text-teal-400">hospitals</div>
-                  <div className="text-xs text-blue-800">LIFE'S ON</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[250px] h-20">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-blue-800 mb-1">NH Narayana Health</div>
-                  <div className="text-xs text-blue-600">Health for all. All for health.</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[200px] h-20">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-purple-600">Dr.Reddy's</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[150px] h-20 bg-blue-800 px-6 rounded">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-white">Biocon</div>
-                </div>
-              </div>
+              ))}
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex items-center justify-center min-w-[200px] h-20">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">MAX</div>
-                  <div className="text-sm text-blue-800">HEALTHCARE</div>
+              {healthcareCompanies.map((company, index) => (
+                <div key={`second-${index}`} className="flex-shrink-0 flex items-center justify-center w-48 h-24 px-4">
+                  <img 
+                    src={company.logo} 
+                    alt={company.name}
+                    className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300 filter grayscale-0 brightness-110"
+                  />
                 </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[250px] h-20">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-blue-600 mb-1">manipal</div>
-                  <div className="text-lg font-bold text-teal-400">hospitals</div>
-                  <div className="text-xs text-blue-800">LIFE'S ON</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[250px] h-20">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-blue-800 mb-1">NH Narayana Health</div>
-                  <div className="text-xs text-blue-600">Health for all. All for health.</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[200px] h-20">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-purple-600">Dr.Reddy's</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center min-w-[150px] h-20 bg-blue-800 px-6 rounded">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-white">Biocon</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
+          
+
         </div>
 
         {/* Circular Testimonials */}

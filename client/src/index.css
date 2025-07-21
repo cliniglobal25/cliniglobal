@@ -589,3 +589,17 @@
   font-weight: 600;
   color: #1f2937;
 }
+
+/* Logo scrolling animation for company placement section */
+.animate-scroll-horizontal {
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+  0% { 
+    transform: translateX(0); 
+  }
+  100% { 
+    transform: translateX(calc(-200px * 5)); /* Move by width of first set of logos */
+  }
+}
