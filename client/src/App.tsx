@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import StudentsTransformation from './components/StudentsTransformation';
+
 import IndustryTrainingPrograms from './components/IndustryTrainingPrograms';
 import Admission from './components/Admission';
 
@@ -30,7 +30,6 @@ const HomePage: React.FC = () => {
       <main>
         <Hero />
         <About />
-        <StudentsTransformation />
         <IndustryTrainingPrograms />
         <Admission />
         <Contact />
