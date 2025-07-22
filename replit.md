@@ -10,6 +10,8 @@ Preferred communication style: Simple, everyday language.
 Banner design preference: Blue background without background images (updated 2025-01-21).
 Contact preferences: WhatsApp contact preferred over traditional chatbot, phone number +917093794447 (updated 2025-01-21).
 Student testimonial preference: Use authentic Indian student photos provided by user (updated 2025-01-21).
+Logo design preference: CliniGlobal logo with clean white background, "Research Institute" text aligned underneath ending below "Global" (updated 2025-01-22).
+Accreditations section: Professional design with light blue gradient background and provided accreditation logos (updated 2025-01-22).
 
 ## System Architecture
 
