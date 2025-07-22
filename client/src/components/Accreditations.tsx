@@ -25,12 +25,12 @@ const Accreditations: React.FC = () => {
     },
     {
       logo: logo4,
-      title: 'Government Recognition',
+      title: 'Council for Clinical Research & Education (CCRE)',
       description: 'Endorsed by regulatory authorities'
     },
     {
       logo: logo5,
-      title: 'Industry Endorsed',
+      title: 'Asian International University, Manipur',
       description: 'Validated by healthcare leaders'
     }
   ];
