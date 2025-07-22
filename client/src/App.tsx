@@ -7,8 +7,7 @@ import StudentsTransformation from './components/StudentsTransformation';
 import IndustryTrainingPrograms from './components/IndustryTrainingPrograms';
 import Admission from './components/Admission';
 
-import Placements from './components/Placements';
-import Testimonials from './components/Testimonials';
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import QueryWidget from './components/QueryWidget';

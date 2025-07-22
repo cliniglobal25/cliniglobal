@@ -36,28 +36,7 @@ const StudentsTransformation: React.FC = () => {
     },
   ];
 
-  const healthcareCompanies = [
-    { 
-      name: 'Max Healthcare', 
-      logo: '/attached_assets/max%20healthcare_1752659060506.PNG'
-    },
-    { 
-      name: 'Manipal Hospitals', 
-      logo: '/attached_assets/manipal%20hospital_1752659060505.PNG'
-    },
-    { 
-      name: 'Narayana Health', 
-      logo: '/attached_assets/narayana_1752659060507.PNG'
-    },
-    { 
-      name: 'Dr. Reddy\'s Labs', 
-      logo: '/attached_assets/dr%20reddy_1752659060504.PNG'
-    },
-    { 
-      name: 'Biocon', 
-      logo: '/attached_assets/biocon_1752659060503.PNG'
-    }
-  ];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50 relative overflow-hidden">
@@ -86,41 +65,7 @@ const StudentsTransformation: React.FC = () => {
           </p>
         </div>
 
-        {/* Healthcare Companies Scrolling Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12 font-poppins">
-            Our Students Are Placed At
-          </h3>
-          
-          {/* Moving logo section with real company logos */}
-          <div className="relative overflow-hidden bg-gradient-to-r from-gray-50 via-white to-gray-50 py-12 shadow-inner">
-            <div className="flex animate-scroll-horizontal">
-              {/* First set of logos */}
-              {healthcareCompanies.map((company, index) => (
-                <div key={`first-${index}`} className="flex-shrink-0 flex items-center justify-center w-48 h-24 px-4">
-                  <img 
-                    src={company.logo} 
-                    alt={company.name}
-                    className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300 filter grayscale-0 brightness-110"
-                  />
-                </div>
-              ))}
-              
-              {/* Duplicate set for seamless loop */}
-              {healthcareCompanies.map((company, index) => (
-                <div key={`second-${index}`} className="flex-shrink-0 flex items-center justify-center w-48 h-24 px-4">
-                  <img 
-                    src={company.logo} 
-                    alt={company.name}
-                    className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300 filter grayscale-0 brightness-110"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-          
 
-        </div>
 
         {/* Circular Testimonials */}
         <div className="bg-white/40 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-lg mb-12">
