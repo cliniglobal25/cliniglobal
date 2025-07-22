@@ -1,30 +1,35 @@
 import React from 'react';
 import { Award, Shield, CheckCircle } from 'lucide-react';
+import logo1 from '@assets/logo 1_1753167527585.png';
+import logo2 from '@assets/logo 2_1753167527586.png';
+import logo3 from '@assets/logo 3_1753167527589.png';
+import logo4 from '@assets/logo 4 copy_1753167527590.jpeg';
+import logo5 from '@assets/logo 5_1753167527593.jpeg';
 
 const Accreditations: React.FC = () => {
   const accreditations = [
     {
-      logo: '/attached_assets/logo 1_1753167527585.png',
+      logo: logo1,
       title: 'IAO Accreditation',
       description: 'International standards in healthcare education'
     },
     {
-      logo: '/attached_assets/logo 2_1753167527586.png', 
+      logo: logo2, 
       title: 'ISO 9001:2015',
       description: 'Quality management system certification'
     },
     {
-      logo: '/attached_assets/logo 3_1753167527589.png',
+      logo: logo3,
       title: 'LSSSDC Certified',
       description: 'Life Sciences Sector approved programs'
     },
     {
-      logo: '/attached_assets/logo 4 copy_1753167527590.jpeg',
+      logo: logo4,
       title: 'Government Recognition',
       description: 'Endorsed by regulatory authorities'
     },
     {
-      logo: '/attached_assets/logo 5_1753167527593.jpeg',
+      logo: logo5,
       title: 'Industry Endorsed',
       description: 'Validated by healthcare leaders'
     }
