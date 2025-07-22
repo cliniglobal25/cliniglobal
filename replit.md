@@ -10,6 +10,7 @@ Preferred communication style: Simple, everyday language.
 Banner design preference: Blue background without background images (updated 2025-01-21).
 Contact preferences: WhatsApp contact preferred over traditional chatbot, phone number +917093794447 (updated 2025-01-21).
 Student testimonial preference: Use authentic Indian student photos provided by user (updated 2025-01-21).
+Accreditations section: Light blue color palette, professional layout above Industry Training Programs (updated 2025-01-22).
 
 ## System Architecture
 
