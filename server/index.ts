@@ -55,13 +55,10 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // Cross-platform safe host and port setup
   const port = Number(process.env.PORT) || 5000;
-  const host = process.env.HOST || "localhost";
+  const host = process.env.HOST || "0.0.0.0";
 
-
-
-server.listen(port, host, () => {
-  log(`🚀 Server running at http://${host}:${port}`);
-});
+  server.listen(port, host, () => {
+    log(`🚀 Server running at http://${host}:${port}`);
+  });
 })();
