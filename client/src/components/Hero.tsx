@@ -1,10 +1,34 @@
 import React from 'react';
 import { ArrowRight, Calendar, Award, Users, BookOpen, Heart, Star, Sparkles, Stethoscope, Activity, Brain, Microscope, Pill, Shield, Zap, Database } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import cliniglobalImage from '@assets/ChatGPT Image Jul 21, 2025, 04_36_06 PM_1753096002378.png';
 
 const Hero: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleExploreCourses = () => {
+    navigate('/courses');
+  };
+
+  const handleEnrollNow = () => {
+    // Scroll to contact section if on home page, or navigate to home and then scroll
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If not on home page, navigate home and then scroll
+      navigate('/');
+      setTimeout(() => {
+        const contactElement = document.getElementById('contact');
+        if (contactElement) {
+          contactElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
   return (
-    <section id="home" className="relative bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 py-20 overflow-hidden min-h-screen flex items-center">
+    <section id="home" className="relative py-20 overflow-hidden min-h-screen flex items-center" style={{ backgroundColor: '#EAF4FF' }}>
 
       {/* Enhanced Moving Background with Higher Opacity */}
       <div className="absolute inset-0">
@@ -71,12 +95,21 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-600/95 to-indigo-600/95 backdrop-blur-md border border-white/30 text-white rounded-full hover:from-blue-700/95 hover:to-indigo-700/95 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl font-poppins">
+              <button 
+                onClick={handleExploreCourses}
+                className="group inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-600/95 to-indigo-600/95 backdrop-blur-md border border-white/30 text-white rounded-full hover:from-blue-700/95 hover:to-indigo-700/95 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl font-poppins"
+              >
                 <span className="font-medium text-sm md:text-base">Explore Courses</span>
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-
+              <button 
+                onClick={handleEnrollNow}
+                className="group inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-green-600/95 to-emerald-600/95 backdrop-blur-md border border-white/30 text-white rounded-full hover:from-green-700/95 hover:to-emerald-700/95 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl font-poppins"
+              >
+                <span className="font-medium text-sm md:text-base">Enroll Now</span>
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+              </button>
             </div>
 
             {/* Stats */}
