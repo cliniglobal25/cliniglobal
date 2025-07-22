@@ -161,19 +161,15 @@ const Header: React.FC = () => {
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo - Redesigned with better alignment */}
+          {/* Logo - Properly sized and aligned */}
           <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
-            <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-100">
-              {/* CliniGlobal text - redesigned layout */}
-              <div className="flex flex-col leading-none">
-                <h1 className="text-2xl md:text-3xl font-bold font-poppins">
-                  <span className="text-blue-600">Clini</span><span className="text-blue-800">Global</span>
-                </h1>
-                {/* Research Institute aligned to end under Global */}
-                <div className="flex justify-end">
-                  <p className="text-xs text-gray-600 font-poppins font-medium tracking-wide">Research Institute</p>
-                </div>
-              </div>
+            <div className="flex flex-col justify-center">
+              {/* CliniGlobal text - increased size for better visibility */}
+              <h1 className="text-2xl md:text-3xl font-bold cliniglobal-brand font-poppins leading-tight">
+                <span className="cliniglobal-clini">Clini</span><span className="cliniglobal-global">Global</span>
+              </h1>
+              {/* Subtext with better visibility */}
+              <p className="text-sm text-gray-500 font-poppins font-medium">Research Institute</p>
             </div>
           </div>
 

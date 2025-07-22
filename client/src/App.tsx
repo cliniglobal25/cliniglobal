@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 
 import IndustryTrainingPrograms from './components/IndustryTrainingPrograms';
-import Accreditations from './components/Accreditations';
 import Admission from './components/Admission';
 
 
@@ -32,7 +31,6 @@ const HomePage: React.FC = () => {
         <Hero />
         <About />
         <IndustryTrainingPrograms />
-        <Accreditations />
         <Admission />
         <Contact />
       </main>
